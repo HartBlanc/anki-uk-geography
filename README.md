@@ -6,7 +6,7 @@ This may mean that UK geography is not as structured as the US, for example. Des
 
 To this end the deck includes:
 - [12 top level regions](https://en.wikipedia.org/wiki/NUTS_statistical_regions_of_the_United_Kingdom) (e.g. Scotland, East of England...)
-- [32 Scottish Council Areas](https://en.wikipedia.org/wiki/NUTS_statistical_regions_of_the_United_Kingdom) and 64 Ceremonial Counties for [England](https://en.wikipedia.org/wiki/Ceremonial_counties_of_England), [Wales](https://en.wikipedia.org/wiki/Preserved_counties_of_Wales), and [Northern Ireland]((https://en.wikipedia.org/wiki/Counties_of_Northern_Ireland))
+- [32 Scottish Council Areas](https://en.wikipedia.org/wiki/NUTS_statistical_regions_of_the_United_Kingdom) and 64 Ceremonial Counties for [England](https://en.wikipedia.org/wiki/Ceremonial_counties_of_England), [Wales](https://en.wikipedia.org/wiki/Preserved_counties_of_Wales), and [Northern Ireland](https://en.wikipedia.org/wiki/Counties_of_Northern_Ireland)
 - [69 Official Cities](https://en.wikipedia.org/wiki/List_of_cities_in_the_United_Kingdom)
 - 15 assorted seas, channels, estuaries, straits and oceans
 
