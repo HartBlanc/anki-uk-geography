@@ -1,191 +1,191 @@
-guid,Location,Macrolocation,Sublocation,LocationType,Macrotype,Placeholder,Map,LocatorMap,MacroPlaceholder
-mP*6#3CNOL,"North East",,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-North East.svg"" />",,
-s2UF-q&*/M,"Yorkshire and the Humber",,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-Yorkshire and the Humber.svg"" />",,
-hE~2]i^Pg#,"North West",,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-North West.svg"" />",,
-puL~Ff0vgC,"West Midlands",,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-West Midlands.svg"" />",,
-"uO;W$l&sZ,","East Midlands",,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-East Midlands.svg"" />",,
-ikX2^0<[S@,"East of England",,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-East of England.svg"" />",,
-iw2!K-[x-t,"South East",,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-South East.svg"" />",,
-vGBy.%7E(Q,"South West",,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-South West.svg"" />",,
-myE.~t-i%T,London,,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-London.svg"" />",,
-frGExSq8@],Wales,,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-Wales.svg"" />",,
-raBJOLa):M,"Northern Ireland",,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-Northern Ireland.svg"" />",,
-oT6@WQ?[qi,Scotland,,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-Scotland.svg"" />",,
-nQGmB9h3.e,Northumberland,"North East",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Northumberland.svg"" />","<img src=""locator-Northumberland.svg"" />","<img src=""uk_regions.svg"" />"
-sH4CviED4q,"Tyne and Wear","North East",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Tyne and Wear.svg"" />","<img src=""locator-Tyne and Wear.svg"" />","<img src=""uk_regions.svg"" />"
-t#M[q&i{hC,"County Durham","North East",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-County Durham.svg"" />","<img src=""locator-County Durham.svg"" />","<img src=""uk_regions.svg"" />"
-i@CA0)K3~d,"North Yorkshire","Yorkshire and the Humber",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-North Yorkshire.svg"" />","<img src=""locator-North Yorkshire.svg"" />","<img src=""uk_regions.svg"" />"
-tX-@oCZ()I,"East Riding of Yorkshire","Yorkshire and the Humber",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-East Riding of Yorkshire.svg"" />","<img src=""locator-East Riding of Yorkshire.svg"" />","<img src=""uk_regions.svg"" />"
-d>Rs#S9y9=,"South Yorkshire","Yorkshire and the Humber",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-South Yorkshire.svg"" />","<img src=""locator-South Yorkshire.svg"" />","<img src=""uk_regions.svg"" />"
-"mz8{^#,/(W","West Yorkshire","Yorkshire and the Humber",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-West Yorkshire.svg"" />","<img src=""locator-West Yorkshire.svg"" />","<img src=""uk_regions.svg"" />"
-MM6`K*k%K,Lancashire,"North West",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Lancashire.svg"" />","<img src=""locator-Lancashire.svg"" />","<img src=""uk_regions.svg"" />"
-cWp:}p[4{,"Greater Manchester","North West",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Greater Manchester.svg"" />","<img src=""locator-Greater Manchester.svg"" />","<img src=""uk_regions.svg"" />"
-fepytDr*],Merseyside,"North West",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Merseyside.svg"" />","<img src=""locator-Merseyside.svg"" />","<img src=""uk_regions.svg"" />"
-bgjrJ|B1za,Cumbria,"North West",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Cumbria.svg"" />","<img src=""locator-Cumbria.svg"" />","<img src=""uk_regions.svg"" />"
-u#_6tj$^qI,Cheshire,"North West",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Cheshire.svg"" />","<img src=""locator-Cheshire.svg"" />","<img src=""uk_regions.svg"" />"
-iJ*hyp7Y8T,Herefordshire,"West Midlands",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Herefordshire.svg"" />","<img src=""locator-Herefordshire.svg"" />","<img src=""uk_regions.svg"" />"
-cHOnASlG1&,Shropshire,"West Midlands",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Shropshire.svg"" />","<img src=""locator-Shropshire.svg"" />","<img src=""uk_regions.svg"" />"
-mh`bnhcpi9,Staffordshire,"West Midlands",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Staffordshire.svg"" />","<img src=""locator-Staffordshire.svg"" />","<img src=""uk_regions.svg"" />"
-pD.bPGr)0x,"West Midlands","West Midlands",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-West Midlands.svg"" />","<img src=""locator-West Midlands.svg"" />","<img src=""uk_regions.svg"" />"
-iJ8H7EPNpT,Worcestershire,"West Midlands",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Worcestershire.svg"" />","<img src=""locator-Worcestershire.svg"" />","<img src=""uk_regions.svg"" />"
-mg9CW<?0dM,Warwickshire,"West Midlands",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Warwickshire.svg"" />","<img src=""locator-Warwickshire.svg"" />","<img src=""uk_regions.svg"" />"
-n7ki@XpEkJ,Nottinghamshire,"East Midlands",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Nottinghamshire.svg"" />","<img src=""locator-Nottinghamshire.svg"" />","<img src=""uk_regions.svg"" />"
-b4wiv1JO$e,Lincolnshire,"East Midlands",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Lincolnshire.svg"" />","<img src=""locator-Lincolnshire.svg"" />","<img src=""uk_regions.svg"" />"
-kbz^*icv>x,Leicestershire,"East Midlands",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Leicestershire.svg"" />","<img src=""locator-Leicestershire.svg"" />","<img src=""uk_regions.svg"" />"
-skk/t&-ABQ,Rutland,"East Midlands",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Rutland.svg"" />","<img src=""locator-Rutland.svg"" />","<img src=""uk_regions.svg"" />"
-pU|#((fgy;,Northamptonshire,"East Midlands",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Northamptonshire.svg"" />","<img src=""locator-Northamptonshire.svg"" />","<img src=""uk_regions.svg"" />"
-"s_xAd,E^5q",Derbyshire,"East Midlands",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Derbyshire.svg"" />","<img src=""locator-Derbyshire.svg"" />","<img src=""uk_regions.svg"" />"
-bt$z$5`6Hr,Cambridgeshire,"East of England",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Cambridgeshire.svg"" />","<img src=""locator-Cambridgeshire.svg"" />","<img src=""uk_regions.svg"" />"
-bbICt&aZgi,Norfolk,"East of England",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Norfolk.svg"" />","<img src=""locator-Norfolk.svg"" />","<img src=""uk_regions.svg"" />"
-bYY}gvOwW%,Suffolk,"East of England",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Suffolk.svg"" />","<img src=""locator-Suffolk.svg"" />","<img src=""uk_regions.svg"" />"
-eEBQJkHN!k,Essex,"East of England",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Essex.svg"" />","<img src=""locator-Essex.svg"" />","<img src=""uk_regions.svg"" />"
-e_>UK71x)S,Hertfordshire,"East of England",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Hertfordshire.svg"" />","<img src=""locator-Hertfordshire.svg"" />","<img src=""uk_regions.svg"" />"
-jqXOA]QWow,Bedfordshire,"East of England",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Bedfordshire.svg"" />","<img src=""locator-Bedfordshire.svg"" />","<img src=""uk_regions.svg"" />"
-odwTC?R09y,Buckinghamshire,"South East",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Buckinghamshire.svg"" />","<img src=""locator-Buckinghamshire.svg"" />","<img src=""uk_regions.svg"" />"
-i.NHPtm)SV,Berkshire,"South East",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Berkshire.svg"" />","<img src=""locator-Berkshire.svg"" />","<img src=""uk_regions.svg"" />"
-ot5R/GJ@CF,Surrey,"South East",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Surrey.svg"" />","<img src=""locator-Surrey.svg"" />","<img src=""uk_regions.svg"" />"
-vT9iPthdO0,"West Sussex","South East",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-West Sussex.svg"" />","<img src=""locator-West Sussex.svg"" />","<img src=""uk_regions.svg"" />"
-p{ADZC!McQ,Kent,"South East",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Kent.svg"" />","<img src=""locator-Kent.svg"" />","<img src=""uk_regions.svg"" />"
-"gdd9)0b1,]","East Sussex","South East",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-East Sussex.svg"" />","<img src=""locator-East Sussex.svg"" />","<img src=""uk_regions.svg"" />"
-h+Vntn8s![,Hampshire,"South East",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Hampshire.svg"" />","<img src=""locator-Hampshire.svg"" />","<img src=""uk_regions.svg"" />"
-m;33fzks`K,Oxfordshire,"South East",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Oxfordshire.svg"" />","<img src=""locator-Oxfordshire.svg"" />","<img src=""uk_regions.svg"" />"
-lb4#2Th:Ff,"Isle of Wight","South East",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Isle of Wight.svg"" />","<img src=""locator-Isle of Wight.svg"" />","<img src=""uk_regions.svg"" />"
-i-B[QLf&TZ,Gloucestershire,"South West",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Gloucestershire.svg"" />","<img src=""locator-Gloucestershire.svg"" />","<img src=""uk_regions.svg"" />"
-sQ?-e2{]!i,Wiltshire,"South West",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Wiltshire.svg"" />","<img src=""locator-Wiltshire.svg"" />","<img src=""uk_regions.svg"" />"
-f$YI_2Z>lW,Somerset,"South West",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Somerset.svg"" />","<img src=""locator-Somerset.svg"" />","<img src=""uk_regions.svg"" />"
-qej94RmGWg,Bristol,"South West",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Bristol.svg"" />","<img src=""locator-Bristol.svg"" />","<img src=""uk_regions.svg"" />"
-ittiQCQy-0,Dorset,"South West",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Dorset.svg"" />","<img src=""locator-Dorset.svg"" />","<img src=""uk_regions.svg"" />"
-r9L:31t<Py,Devon,"South West",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Devon.svg"" />","<img src=""locator-Devon.svg"" />","<img src=""uk_regions.svg"" />"
-jV4yI}#JKA,Cornwall,"South West",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Cornwall.svg"" />","<img src=""locator-Cornwall.svg"" />","<img src=""uk_regions.svg"" />"
-eY!H7e8#e3,"City of London",London,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-City of London.svg"" />","<img src=""locator-City of London.svg"" />","<img src=""uk_regions.svg"" />"
-fop%K1JNzp,"Greater London",London,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Greater London.svg"" />","<img src=""locator-Greater London.svg"" />","<img src=""uk_regions.svg"" />"
-nz^%t{k[rU,Gwynedd,Wales,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Gwynedd.svg"" />","<img src=""locator-Gwynedd.svg"" />","<img src=""uk_regions.svg"" />"
-l|0):}n^Cz,Clwyd,Wales,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Clwyd.svg"" />","<img src=""locator-Clwyd.svg"" />","<img src=""uk_regions.svg"" />"
-i-6p6h$oYo,Powys,Wales,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Powys.svg"" />","<img src=""locator-Powys.svg"" />","<img src=""uk_regions.svg"" />"
-r+mTl{W8=3,Dyfed,Wales,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Dyfed.svg"" />","<img src=""locator-Dyfed.svg"" />","<img src=""uk_regions.svg"" />"
-u+;[NK:s#t,"West Glamorgan",Wales,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-West Glamorgan.svg"" />","<img src=""locator-West Glamorgan.svg"" />","<img src=""uk_regions.svg"" />"
-k&Bi(%ndMr,"Mid Glamorgan",Wales,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Mid Glamorgan.svg"" />","<img src=""locator-Mid Glamorgan.svg"" />","<img src=""uk_regions.svg"" />"
-"hGK{_4:,VQ","South Glamorgan",Wales,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-South Glamorgan.svg"" />","<img src=""locator-South Glamorgan.svg"" />","<img src=""uk_regions.svg"" />"
-dE2)Ezp<hX,Gwent,Wales,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Gwent.svg"" />","<img src=""locator-Gwent.svg"" />","<img src=""uk_regions.svg"" />"
-rwvO@5E5Lz,"County Armagh","Northern Ireland",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-County Armagh.svg"" />","<img src=""locator-County Armagh.svg"" />","<img src=""uk_regions.svg"" />"
-j)|b<&<q`S,"County Down","Northern Ireland",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-County Down.svg"" />","<img src=""locator-County Down.svg"" />","<img src=""uk_regions.svg"" />"
-kDu60sc;3B,"County Antrim","Northern Ireland",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-County Antrim.svg"" />","<img src=""locator-County Antrim.svg"" />","<img src=""uk_regions.svg"" />"
-nT;W|*}HTC,"County Londonderry","Northern Ireland",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-County Londonderry.svg"" />","<img src=""locator-County Londonderry.svg"" />","<img src=""uk_regions.svg"" />"
-"papfz27t,t","County Tyrone","Northern Ireland",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-County Tyrone.svg"" />","<img src=""locator-County Tyrone.svg"" />","<img src=""uk_regions.svg"" />"
-uBJRaAnz}0,"County Fermanagh","Northern Ireland",,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-County Fermanagh.svg"" />","<img src=""locator-County Fermanagh.svg"" />","<img src=""uk_regions.svg"" />"
-ly[z0h#y{P,Aberdeenshire,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Aberdeenshire.svg"" />","<img src=""locator-Aberdeenshire.svg"" />","<img src=""uk_regions.svg"" />"
-d6oPXD373a,"Aberdeen City",Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Aberdeen City.svg"" />","<img src=""locator-Aberdeen City.svg"" />","<img src=""uk_regions.svg"" />"
-q:G@1I4QeV,Angus,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Angus.svg"" />","<img src=""locator-Angus.svg"" />","<img src=""uk_regions.svg"" />"
-kVsp&<529<,"Argyll and Bute",Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Argyll and Bute.svg"" />","<img src=""locator-Argyll and Bute.svg"" />","<img src=""uk_regions.svg"" />"
-p]svu8GE+Y,"City of Edinburgh",Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-City of Edinburgh.svg"" />","<img src=""locator-City of Edinburgh.svg"" />","<img src=""uk_regions.svg"" />"
-fXk@]RG7qz,Clackmannanshire,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Clackmannanshire.svg"" />","<img src=""locator-Clackmannanshire.svg"" />","<img src=""uk_regions.svg"" />"
-b2$4+nKu~>,"Dumfries and Galloway",Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Dumfries and Galloway.svg"" />","<img src=""locator-Dumfries and Galloway.svg"" />","<img src=""uk_regions.svg"" />"
-l%uNZFvtk:,"Dundee City",Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Dundee City.svg"" />","<img src=""locator-Dundee City.svg"" />","<img src=""uk_regions.svg"" />"
-uuoHiRIVY!,"East Ayrshire",Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-East Ayrshire.svg"" />","<img src=""locator-East Ayrshire.svg"" />","<img src=""uk_regions.svg"" />"
-jWcg;DLg*},"East Dunbartonshire",Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-East Dunbartonshire.svg"" />","<img src=""locator-East Dunbartonshire.svg"" />","<img src=""uk_regions.svg"" />"
-m<m+1+iVR2,"East Lothian",Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-East Lothian.svg"" />","<img src=""locator-East Lothian.svg"" />","<img src=""uk_regions.svg"" />"
-m%!n1)F[|K,"East Renfrewshire",Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-East Renfrewshire.svg"" />","<img src=""locator-East Renfrewshire.svg"" />","<img src=""uk_regions.svg"" />"
-ey[{$pT4jf,Falkirk,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Falkirk.svg"" />","<img src=""locator-Falkirk.svg"" />","<img src=""uk_regions.svg"" />"
-f^eyTCC]mS,Fife,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Fife.svg"" />","<img src=""locator-Fife.svg"" />","<img src=""uk_regions.svg"" />"
-b*|3J|Xhn&,"Glasgow City",Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Glasgow City.svg"" />","<img src=""locator-Glasgow City.svg"" />","<img src=""uk_regions.svg"" />"
-pY!5=O8)Ab,Highland,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Highland.svg"" />","<img src=""locator-Highland.svg"" />","<img src=""uk_regions.svg"" />"
-pL=IEV&>mk,Inverclyde,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Inverclyde.svg"" />","<img src=""locator-Inverclyde.svg"" />","<img src=""uk_regions.svg"" />"
-g.^t<nl0pU,Midlothian,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Midlothian.svg"" />","<img src=""locator-Midlothian.svg"" />","<img src=""uk_regions.svg"" />"
-qv941ueR`/,Moray,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Moray.svg"" />","<img src=""locator-Moray.svg"" />","<img src=""uk_regions.svg"" />"
-bz{F~5_OK-,"Outer Hebrides",Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Outer Hebrides.svg"" />","<img src=""locator-Outer Hebrides.svg"" />","<img src=""uk_regions.svg"" />"
-u);7fbqY#P,"North Ayrshire",Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-North Ayrshire.svg"" />","<img src=""locator-North Ayrshire.svg"" />","<img src=""uk_regions.svg"" />"
-`X^9bL!>C,"North Lanarkshire",Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-North Lanarkshire.svg"" />","<img src=""locator-North Lanarkshire.svg"" />","<img src=""uk_regions.svg"" />"
-ve=`?BX=Ef,"Orkney Islands",Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Orkney Islands.svg"" />","<img src=""locator-Orkney Islands.svg"" />","<img src=""uk_regions.svg"" />"
-d/emV$Qa73,"Perth and Kinross",Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Perth and Kinross.svg"" />","<img src=""locator-Perth and Kinross.svg"" />","<img src=""uk_regions.svg"" />"
-qThXK&|Ab;,Renfrewshire,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Renfrewshire.svg"" />","<img src=""locator-Renfrewshire.svg"" />","<img src=""uk_regions.svg"" />"
-hC&2VDeofe,"Scottish Borders",Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Scottish Borders.svg"" />","<img src=""locator-Scottish Borders.svg"" />","<img src=""uk_regions.svg"" />"
-fn#3v]!S=J,"Shetland Islands",Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Shetland Islands.svg"" />","<img src=""locator-Shetland Islands.svg"" />","<img src=""uk_regions.svg"" />"
-"q:]p8ca,UN","South Ayrshire",Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-South Ayrshire.svg"" />","<img src=""locator-South Ayrshire.svg"" />","<img src=""uk_regions.svg"" />"
-"vT&,#3Kl:r","South Lanarkshire",Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-South Lanarkshire.svg"" />","<img src=""locator-South Lanarkshire.svg"" />","<img src=""uk_regions.svg"" />"
-c{W1_BsUtG,Stirling,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Stirling.svg"" />","<img src=""locator-Stirling.svg"" />","<img src=""uk_regions.svg"" />"
-l!V^6`_!dJ,"West Dunbartonshire",Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-West Dunbartonshire.svg"" />","<img src=""locator-West Dunbartonshire.svg"" />","<img src=""uk_regions.svg"" />"
-b-eU3OcO2y,"West Lothian",Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-West Lothian.svg"" />","<img src=""locator-West Lothian.svg"" />","<img src=""uk_regions.svg"" />"
-$%Ynhh0R6,"Atlantic Ocean",,,"Body of Water",,,"<img src=""bow-Atlantic Ocean.svg"" />",,
-ne@4b:T0#+,"The Wash",,,"Body of Water",,,"<img src=""bow-The Wash.svg"" />",,
-evQpAL*fBY,"Bristol Channel",,,"Body of Water",,,"<img src=""bow-Bristol Channel.svg"" />",,
-iw&WaTB?u.,"Strait of Dover",,,"Body of Water",,,"<img src=""bow-Strait of Dover.svg"" />",,
-oe.!noXvHn,"Firth of Forth",,,"Body of Water",,,"<img src=""bow-Firth of Forth.svg"" />",,
-c:j7j>36$M,"Theames Estuary",,,"Body of Water",,,"<img src=""bow-Theames Estuary.svg"" />",,
-jv!UtoAs>i,"North Sea",,,"Body of Water",,,"<img src=""bow-North Sea.svg"" />",,
-o~;M:5mJeQ,"The Humber",,,"Body of Water",,,"<img src=""bow-The Humber.svg"" />",,
-jn/si2Y7e,"Solway Firth",,,"Body of Water",,,"<img src=""bow-Solway Firth.svg"" />",,
-"f~MG7SF,W[","English Channel",,,"Body of Water",,,"<img src=""bow-English Channel.svg"" />",,
-eI;Y`p1m6I,"Firth of Clyde",,,"Body of Water",,,"<img src=""bow-Firth of Clyde.svg"" />",,
-"d~eI,^F]XM","North Channel",,,"Body of Water",,,"<img src=""bow-North Channel.svg"" />",,
-gYzCPB16Dx,"St George's Channel",,,"Body of Water",,,"<img src=""bow-St George's Channel.svg"" />",,
-f){W@|O5a&,"Irish Sea",,,"Body of Water",,,"<img src=""bow-Irish Sea.svg"" />",,
-dK0n>g8>/E,"Celtic Sea",,,"Body of Water",,,"<img src=""bow-Celtic Sea.svg"" />",,
-iU$KVdU>Cw,Bath,Somerset,,City,County,,,"<img src=""c-Somerset.svg"" />","<img src=""uk_counties.svg"" />"
-u-2w:P|6Ir,Birmingham,"West Midlands",,City,County,,,"<img src=""c-West Midlands.svg"" />","<img src=""uk_counties.svg"" />"
-c^C+HcRlx.,Bradford,"West Yorkshire",,City,County,,,"<img src=""c-West Yorkshire.svg"" />","<img src=""uk_counties.svg"" />"
-gUAmD`%:Kq,"Brighton and Hove","East Sussex",,City,County,,,"<img src=""c-East Sussex.svg"" />","<img src=""uk_counties.svg"" />"
-f`yC^TI_K+,Bristol,Bristol,,City,County,,,"<img src=""c-Bristol.svg"" />","<img src=""uk_counties.svg"" />"
-hG9r-QM08M,Cambridge,Cambridgeshire,,City,County,,,"<img src=""c-Cambridgeshire.svg"" />","<img src=""uk_counties.svg"" />"
-"j~lAPEY(T,",Canterbury,Kent,,City,County,,,"<img src=""c-Kent.svg"" />","<img src=""uk_counties.svg"" />"
-"qN}WsA>79,",Carlisle,Cumbria,,City,County,,,"<img src=""c-Cumbria.svg"" />","<img src=""uk_counties.svg"" />"
-j}<t#&|0{f,Chelmsford,Essex,,City,County,,,"<img src=""c-Essex.svg"" />","<img src=""uk_counties.svg"" />"
-eP0w-sF#!K,Chester,Cheshire,,City,County,,,"<img src=""c-Cheshire.svg"" />","<img src=""uk_counties.svg"" />"
-?B;+HJ:D/,Chichester,"West Sussex",,City,County,,,"<img src=""c-West Sussex.svg"" />","<img src=""uk_counties.svg"" />"
-i+VO~;]zY=,Coventry,"West Midlands",,City,County,,,"<img src=""c-West Midlands.svg"" />","<img src=""uk_counties.svg"" />"
-s<cce6T0]@,Derby,Derbyshire,,City,County,,,"<img src=""c-Derbyshire.svg"" />","<img src=""uk_counties.svg"" />"
-qnpyd6Gm4G,Durham,"County Durham",,City,County,,,"<img src=""c-County Durham.svg"" />","<img src=""uk_counties.svg"" />"
-c~!7`4<CAJ,Ely,Cambridgeshire,,City,County,,,"<img src=""c-Cambridgeshire.svg"" />","<img src=""uk_counties.svg"" />"
-qiZisC81}k,Exeter,Devon,,City,County,,,"<img src=""c-Devon.svg"" />","<img src=""uk_counties.svg"" />"
-faM<p~d%F(,Gloucester,Gloucestershire,,City,County,,,"<img src=""c-Gloucestershire.svg"" />","<img src=""uk_counties.svg"" />"
-lca=u5;~|Y,Hereford,Herefordshire,,City,County,,,"<img src=""c-Herefordshire.svg"" />","<img src=""uk_counties.svg"" />"
-dR}mPY$xB>,"Kingston upon Hull","East Riding of Yorkshire",,City,County,,,"<img src=""c-East Riding of Yorkshire.svg"" />","<img src=""uk_counties.svg"" />"
-rCQ#Ic@BPW,Lancaster,Lancashire,,City,County,,,"<img src=""c-Lancashire.svg"" />","<img src=""uk_counties.svg"" />"
-iv@_vZ[7Dk,Leeds,"West Yorkshire",,City,County,,,"<img src=""c-West Yorkshire.svg"" />","<img src=""uk_counties.svg"" />"
-cC]4g1n~wQ,Leicester,Leicestershire,,City,County,,,"<img src=""c-Leicestershire.svg"" />","<img src=""uk_counties.svg"" />"
-uO~&UMZk6$,Lichfield,Staffordshire,,City,County,,,"<img src=""c-Staffordshire.svg"" />","<img src=""uk_counties.svg"" />"
-fpN#VJus%*,Lincoln,Lincolnshire,,City,County,,,"<img src=""c-Lincolnshire.svg"" />","<img src=""uk_counties.svg"" />"
-yUaR%ec@),Liverpool,Merseyside,,City,County,,,"<img src=""c-Merseyside.svg"" />","<img src=""uk_counties.svg"" />"
-l/Wjg)q-qZ,"City of London","City of London",,City,County,,,"<img src=""c-City of London.svg"" />","<img src=""uk_counties.svg"" />"
-uD#4.ECD`l,Manchester,"Greater Manchester",,City,County,,,"<img src=""c-Greater Manchester.svg"" />","<img src=""uk_counties.svg"" />"
-r^&_5(m]HJ,"Newcastle upon Tyne","Tyne and Wear",,City,County,,,"<img src=""c-Tyne and Wear.svg"" />","<img src=""uk_counties.svg"" />"
-o|G)(|#PDT,Norwich,Norfolk,,City,County,,,"<img src=""c-Norfolk.svg"" />","<img src=""uk_counties.svg"" />"
-d.cxX6_ESA,Nottingham,Nottinghamshire,,City,County,,,"<img src=""c-Nottinghamshire.svg"" />","<img src=""uk_counties.svg"" />"
-pGDcNFb-c=,Oxford,Oxfordshire,,City,County,,,"<img src=""c-Oxfordshire.svg"" />","<img src=""uk_counties.svg"" />"
-cRd-;7gAH%,Peterborough,Cambridgeshire,,City,County,,,"<img src=""c-Cambridgeshire.svg"" />","<img src=""uk_counties.svg"" />"
-gQbAsm;g>Z,Plymouth,Devon,,City,County,,,"<img src=""c-Devon.svg"" />","<img src=""uk_counties.svg"" />"
-ctIQ=qyJP.,Portsmouth,Hampshire,,City,County,,,"<img src=""c-Hampshire.svg"" />","<img src=""uk_counties.svg"" />"
-t2Oen!H{[n,Preston,Lancashire,,City,County,,,"<img src=""c-Lancashire.svg"" />","<img src=""uk_counties.svg"" />"
-d;oV-j^Trt,Ripon,"North Yorkshire",,City,County,,,"<img src=""c-North Yorkshire.svg"" />","<img src=""uk_counties.svg"" />"
-bP|{aP]<8?,Salford,"Greater Manchester",,City,County,,,"<img src=""c-Greater Manchester.svg"" />","<img src=""uk_counties.svg"" />"
-qOA`X-;$|7,Salisbury,Wiltshire,,City,County,,,"<img src=""c-Wiltshire.svg"" />","<img src=""uk_counties.svg"" />"
-ee`k?;O`X1,Sheffield,"South Yorkshire",,City,County,,,"<img src=""c-South Yorkshire.svg"" />","<img src=""uk_counties.svg"" />"
-rDH5#/}D%o,Southampton,Hampshire,,City,County,,,"<img src=""c-Hampshire.svg"" />","<img src=""uk_counties.svg"" />"
-dw+`wl.!w/,"St Albans",Hertfordshire,,City,County,,,"<img src=""c-Hertfordshire.svg"" />","<img src=""uk_counties.svg"" />"
-l<?NV@WYvZ,Stoke-on-Trent,Staffordshire,,City,County,,,"<img src=""c-Staffordshire.svg"" />","<img src=""uk_counties.svg"" />"
-b2sB([?Oz@,Sunderland,"Tyne and Wear",,City,County,,,"<img src=""c-Tyne and Wear.svg"" />","<img src=""uk_counties.svg"" />"
-vfb)4-g{hl,Truro,Cornwall,,City,County,,,"<img src=""c-Cornwall.svg"" />","<img src=""uk_counties.svg"" />"
-c$P9.&{J$O,Wakefield,"West Yorkshire",,City,County,,,"<img src=""c-West Yorkshire.svg"" />","<img src=""uk_counties.svg"" />"
-qO6*-=|rav,Wells,Somerset,,City,County,,,"<img src=""c-Somerset.svg"" />","<img src=""uk_counties.svg"" />"
-pQbfRdN.wi,Westminster,"Greater London",,City,County,,,"<img src=""c-Greater London.svg"" />","<img src=""uk_counties.svg"" />"
-jW&R)K:Di&,Winchester,Hampshire,,City,County,,,"<img src=""c-Hampshire.svg"" />","<img src=""uk_counties.svg"" />"
-uJi:`z6Yhd,Wolverhampton,"West Midlands",,City,County,,,"<img src=""c-West Midlands.svg"" />","<img src=""uk_counties.svg"" />"
-bp60`w9sFU,Worcester,Worcestershire,,City,County,,,"<img src=""c-Worcestershire.svg"" />","<img src=""uk_counties.svg"" />"
-hhIGE`gQ]:,York,"North Yorkshire",,City,County,,,"<img src=""c-North Yorkshire.svg"" />","<img src=""uk_counties.svg"" />"
-m;F[.AJfg=,Aberdeen,"Aberdeen City",,City,County,,,"<img src=""c-Aberdeen City.svg"" />","<img src=""uk_counties.svg"" />"
-"i,//kZd8T:",Dundee,"Dundee City",,City,County,,,"<img src=""c-Dundee City.svg"" />","<img src=""uk_counties.svg"" />"
-siM%;}X!r!,Edinburgh,"City of Edinburgh",,City,County,,,"<img src=""c-City of Edinburgh.svg"" />","<img src=""uk_counties.svg"" />"
-b$b:nymwmZ,Glasgow,"Glasgow City",,City,County,,,"<img src=""c-Glasgow City.svg"" />","<img src=""uk_counties.svg"" />"
-jLQ!k=)ZOq,Inverness,Highland,,City,County,,,"<img src=""c-Highland.svg"" />","<img src=""uk_counties.svg"" />"
-q-b4[$mMR?,Perth,"Perth and Kinross",,City,County,,,"<img src=""c-Perth and Kinross.svg"" />","<img src=""uk_counties.svg"" />"
-ku&81MNWeo,Stirling,Stirling,,City,County,,,"<img src=""c-Stirling.svg"" />","<img src=""uk_counties.svg"" />"
-jQb(4svnRN,Bangor,Gwynedd,,City,County,,,"<img src=""c-Gwynedd.svg"" />","<img src=""uk_counties.svg"" />"
-f-_nU@}<n.,Cardiff,"South Glamorgan",,City,County,,,"<img src=""c-South Glamorgan.svg"" />","<img src=""uk_counties.svg"" />"
-u^TFq(ACtc,Newport,Gwent,,City,County,,,"<img src=""c-Gwent.svg"" />","<img src=""uk_counties.svg"" />"
-vr~Lav5@hp,"St Asaph",Clwyd,,City,County,,,"<img src=""c-Clwyd.svg"" />","<img src=""uk_counties.svg"" />"
-"g7H-KV,V#z","St Davids",Dyfed,,City,County,,,"<img src=""c-Dyfed.svg"" />","<img src=""uk_counties.svg"" />"
-l{{Y-cH!Ul,Swansea,"West Glamorgan",,City,County,,,"<img src=""c-West Glamorgan.svg"" />","<img src=""uk_counties.svg"" />"
-dYog6{48Yu,Armagh,"County Armagh",,City,County,,,"<img src=""c-County Armagh.svg"" />","<img src=""uk_counties.svg"" />"
-"m,G6f2xtm5",Belfast,"County Antrim",,City,County,,,"<img src=""c-County Antrim.svg"" />","<img src=""uk_counties.svg"" />"
-uv|ugpmSZ/,Lisburn,"County Antrim / County Down",,City,County,,,,
-"b*l,%oG*1D",Newry,"County Armagh / County Down",,City,County,,,,
-p5||w4hSHQ,Derry,"County Londonderry",,City,County,,,"<img src=""c-County Londonderry.svg"" />","<img src=""uk_counties.svg"" />"
+guid,Location,Macrolocation,Sublocation,LocationType,Macrotype,Placeholder,Map,LocatorMap,MacroPlaceholder,tags
+guid,North East,,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-North East.svg"" />",,,Region England
+mP*6#3CNOL,Yorkshire and the Humber,,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-Yorkshire and the Humber.svg"" />",,,Region England
+s2UF-q&*/M,North West,,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-North West.svg"" />",,,Region England
+hE~2]i^Pg#,West Midlands,,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-West Midlands.svg"" />",,,Region England
+puL~Ff0vgC,East Midlands,,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-East Midlands.svg"" />",,,Region England
+"uO;W$l&sZ,",East of England,,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-East of England.svg"" />",,,Region England
+ikX2^0<[S@,South East,,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-South East.svg"" />",,,Region England
+iw2!K-[x-t,South West,,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-South West.svg"" />",,,Region England
+vGBy.%7E(Q,London,,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-London.svg"" />",,,Region England
+myE.~t-i%T,Wales,,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-Wales.svg"" />",,,Region Wales
+frGExSq8@],Northern Ireland,,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-Northern Ireland.svg"" />",,,Region NorthernIreland
+raBJOLa):M,Scotland,,,Region,,"<img src=""uk_regions.svg"" />","<img src=""r-Scotland.svg"" />",,,Region Scotland
+oT6@WQ?[qi,Northumberland,North East,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Northumberland.svg"" />","<img src=""locator-Northumberland.svg"" />","<img src=""uk_regions.svg"" />",County England
+nQGmB9h3.e,Tyne and Wear,North East,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Tyne and Wear.svg"" />","<img src=""locator-Tyne and Wear.svg"" />","<img src=""uk_regions.svg"" />",County England
+sH4CviED4q,County Durham,North East,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-County Durham.svg"" />","<img src=""locator-County Durham.svg"" />","<img src=""uk_regions.svg"" />",County England
+t#M[q&i{hC,North Yorkshire,Yorkshire and the Humber,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-North Yorkshire.svg"" />","<img src=""locator-North Yorkshire.svg"" />","<img src=""uk_regions.svg"" />",County England
+i@CA0)K3~d,East Riding of Yorkshire,Yorkshire and the Humber,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-East Riding of Yorkshire.svg"" />","<img src=""locator-East Riding of Yorkshire.svg"" />","<img src=""uk_regions.svg"" />",County England
+tX-@oCZ()I,South Yorkshire,Yorkshire and the Humber,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-South Yorkshire.svg"" />","<img src=""locator-South Yorkshire.svg"" />","<img src=""uk_regions.svg"" />",County England
+d>Rs#S9y9=,West Yorkshire,Yorkshire and the Humber,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-West Yorkshire.svg"" />","<img src=""locator-West Yorkshire.svg"" />","<img src=""uk_regions.svg"" />",County England
+"mz8{^#,/(W",Lancashire,North West,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Lancashire.svg"" />","<img src=""locator-Lancashire.svg"" />","<img src=""uk_regions.svg"" />",County England
+MM6`K*k%K,Greater Manchester,North West,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Greater Manchester.svg"" />","<img src=""locator-Greater Manchester.svg"" />","<img src=""uk_regions.svg"" />",County England
+cWp:}p[4{,Merseyside,North West,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Merseyside.svg"" />","<img src=""locator-Merseyside.svg"" />","<img src=""uk_regions.svg"" />",County England
+fepytDr*],Cumbria,North West,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Cumbria.svg"" />","<img src=""locator-Cumbria.svg"" />","<img src=""uk_regions.svg"" />",County England
+bgjrJ|B1za,Cheshire,North West,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Cheshire.svg"" />","<img src=""locator-Cheshire.svg"" />","<img src=""uk_regions.svg"" />",County England
+u#_6tj$^qI,Herefordshire,West Midlands,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Herefordshire.svg"" />","<img src=""locator-Herefordshire.svg"" />","<img src=""uk_regions.svg"" />",County England
+iJ*hyp7Y8T,Shropshire,West Midlands,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Shropshire.svg"" />","<img src=""locator-Shropshire.svg"" />","<img src=""uk_regions.svg"" />",County England
+cHOnASlG1&,Staffordshire,West Midlands,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Staffordshire.svg"" />","<img src=""locator-Staffordshire.svg"" />","<img src=""uk_regions.svg"" />",County England
+mh`bnhcpi9,West Midlands,West Midlands,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-West Midlands.svg"" />","<img src=""locator-West Midlands.svg"" />","<img src=""uk_regions.svg"" />",County England
+pD.bPGr)0x,Worcestershire,West Midlands,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Worcestershire.svg"" />","<img src=""locator-Worcestershire.svg"" />","<img src=""uk_regions.svg"" />",County England
+iJ8H7EPNpT,Warwickshire,West Midlands,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Warwickshire.svg"" />","<img src=""locator-Warwickshire.svg"" />","<img src=""uk_regions.svg"" />",County England
+mg9CW<?0dM,Nottinghamshire,East Midlands,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Nottinghamshire.svg"" />","<img src=""locator-Nottinghamshire.svg"" />","<img src=""uk_regions.svg"" />",County England
+n7ki@XpEkJ,Lincolnshire,East Midlands,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Lincolnshire.svg"" />","<img src=""locator-Lincolnshire.svg"" />","<img src=""uk_regions.svg"" />",County England
+b4wiv1JO$e,Leicestershire,East Midlands,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Leicestershire.svg"" />","<img src=""locator-Leicestershire.svg"" />","<img src=""uk_regions.svg"" />",County England
+kbz^*icv>x,Rutland,East Midlands,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Rutland.svg"" />","<img src=""locator-Rutland.svg"" />","<img src=""uk_regions.svg"" />",County England
+skk/t&-ABQ,Northamptonshire,East Midlands,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Northamptonshire.svg"" />","<img src=""locator-Northamptonshire.svg"" />","<img src=""uk_regions.svg"" />",County England
+pU|#((fgy;,Derbyshire,East Midlands,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Derbyshire.svg"" />","<img src=""locator-Derbyshire.svg"" />","<img src=""uk_regions.svg"" />",County England
+"s_xAd,E^5q",Cambridgeshire,East of England,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Cambridgeshire.svg"" />","<img src=""locator-Cambridgeshire.svg"" />","<img src=""uk_regions.svg"" />",County England
+bt$z$5`6Hr,Norfolk,East of England,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Norfolk.svg"" />","<img src=""locator-Norfolk.svg"" />","<img src=""uk_regions.svg"" />",County England
+bbICt&aZgi,Suffolk,East of England,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Suffolk.svg"" />","<img src=""locator-Suffolk.svg"" />","<img src=""uk_regions.svg"" />",County England
+bYY}gvOwW%,Essex,East of England,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Essex.svg"" />","<img src=""locator-Essex.svg"" />","<img src=""uk_regions.svg"" />",County England
+eEBQJkHN!k,Hertfordshire,East of England,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Hertfordshire.svg"" />","<img src=""locator-Hertfordshire.svg"" />","<img src=""uk_regions.svg"" />",County England
+e_>UK71x)S,Bedfordshire,East of England,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Bedfordshire.svg"" />","<img src=""locator-Bedfordshire.svg"" />","<img src=""uk_regions.svg"" />",County England
+jqXOA]QWow,Buckinghamshire,South East,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Buckinghamshire.svg"" />","<img src=""locator-Buckinghamshire.svg"" />","<img src=""uk_regions.svg"" />",County England
+odwTC?R09y,Berkshire,South East,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Berkshire.svg"" />","<img src=""locator-Berkshire.svg"" />","<img src=""uk_regions.svg"" />",County England
+i.NHPtm)SV,Surrey,South East,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Surrey.svg"" />","<img src=""locator-Surrey.svg"" />","<img src=""uk_regions.svg"" />",County England
+ot5R/GJ@CF,West Sussex,South East,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-West Sussex.svg"" />","<img src=""locator-West Sussex.svg"" />","<img src=""uk_regions.svg"" />",County England
+vT9iPthdO0,Kent,South East,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Kent.svg"" />","<img src=""locator-Kent.svg"" />","<img src=""uk_regions.svg"" />",County England
+p{ADZC!McQ,East Sussex,South East,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-East Sussex.svg"" />","<img src=""locator-East Sussex.svg"" />","<img src=""uk_regions.svg"" />",County England
+"gdd9)0b1,]",Hampshire,South East,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Hampshire.svg"" />","<img src=""locator-Hampshire.svg"" />","<img src=""uk_regions.svg"" />",County England
+h+Vntn8s![,Oxfordshire,South East,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Oxfordshire.svg"" />","<img src=""locator-Oxfordshire.svg"" />","<img src=""uk_regions.svg"" />",County England
+m;33fzks`K,Isle of Wight,South East,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Isle of Wight.svg"" />","<img src=""locator-Isle of Wight.svg"" />","<img src=""uk_regions.svg"" />",County England
+lb4#2Th:Ff,Gloucestershire,South West,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Gloucestershire.svg"" />","<img src=""locator-Gloucestershire.svg"" />","<img src=""uk_regions.svg"" />",County England
+i-B[QLf&TZ,Wiltshire,South West,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Wiltshire.svg"" />","<img src=""locator-Wiltshire.svg"" />","<img src=""uk_regions.svg"" />",County England
+sQ?-e2{]!i,Somerset,South West,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Somerset.svg"" />","<img src=""locator-Somerset.svg"" />","<img src=""uk_regions.svg"" />",County England
+f$YI_2Z>lW,Bristol,South West,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Bristol.svg"" />","<img src=""locator-Bristol.svg"" />","<img src=""uk_regions.svg"" />",County England
+qej94RmGWg,Dorset,South West,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Dorset.svg"" />","<img src=""locator-Dorset.svg"" />","<img src=""uk_regions.svg"" />",County England
+ittiQCQy-0,Devon,South West,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Devon.svg"" />","<img src=""locator-Devon.svg"" />","<img src=""uk_regions.svg"" />",County England
+r9L:31t<Py,Cornwall,South West,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Cornwall.svg"" />","<img src=""locator-Cornwall.svg"" />","<img src=""uk_regions.svg"" />",County England
+jV4yI}#JKA,City of London,London,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-City of London.svg"" />","<img src=""locator-City of London.svg"" />","<img src=""uk_regions.svg"" />",County England
+eY!H7e8#e3,Greater London,London,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Greater London.svg"" />","<img src=""locator-Greater London.svg"" />","<img src=""uk_regions.svg"" />",County England
+fop%K1JNzp,Gwynedd,Wales,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Gwynedd.svg"" />","<img src=""locator-Gwynedd.svg"" />","<img src=""uk_regions.svg"" />",County Wales
+nz^%t{k[rU,Clwyd,Wales,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Clwyd.svg"" />","<img src=""locator-Clwyd.svg"" />","<img src=""uk_regions.svg"" />",County Wales
+l|0):}n^Cz,Powys,Wales,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Powys.svg"" />","<img src=""locator-Powys.svg"" />","<img src=""uk_regions.svg"" />",County Wales
+i-6p6h$oYo,Dyfed,Wales,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Dyfed.svg"" />","<img src=""locator-Dyfed.svg"" />","<img src=""uk_regions.svg"" />",County Wales
+r+mTl{W8=3,West Glamorgan,Wales,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-West Glamorgan.svg"" />","<img src=""locator-West Glamorgan.svg"" />","<img src=""uk_regions.svg"" />",County Wales
+u+;[NK:s#t,Mid Glamorgan,Wales,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Mid Glamorgan.svg"" />","<img src=""locator-Mid Glamorgan.svg"" />","<img src=""uk_regions.svg"" />",County Wales
+k&Bi(%ndMr,South Glamorgan,Wales,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-South Glamorgan.svg"" />","<img src=""locator-South Glamorgan.svg"" />","<img src=""uk_regions.svg"" />",County Wales
+"hGK{_4:,VQ",Gwent,Wales,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Gwent.svg"" />","<img src=""locator-Gwent.svg"" />","<img src=""uk_regions.svg"" />",County Wales
+dE2)Ezp<hX,County Armagh,Northern Ireland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-County Armagh.svg"" />","<img src=""locator-County Armagh.svg"" />","<img src=""uk_regions.svg"" />",County NorthernIreland
+rwvO@5E5Lz,County Down,Northern Ireland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-County Down.svg"" />","<img src=""locator-County Down.svg"" />","<img src=""uk_regions.svg"" />",County NorthernIreland
+j)|b<&<q`S,County Antrim,Northern Ireland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-County Antrim.svg"" />","<img src=""locator-County Antrim.svg"" />","<img src=""uk_regions.svg"" />",County NorthernIreland
+kDu60sc;3B,County Londonderry,Northern Ireland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-County Londonderry.svg"" />","<img src=""locator-County Londonderry.svg"" />","<img src=""uk_regions.svg"" />",County NorthernIreland
+nT;W|*}HTC,County Tyrone,Northern Ireland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-County Tyrone.svg"" />","<img src=""locator-County Tyrone.svg"" />","<img src=""uk_regions.svg"" />",County NorthernIreland
+"papfz27t,t",County Fermanagh,Northern Ireland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-County Fermanagh.svg"" />","<img src=""locator-County Fermanagh.svg"" />","<img src=""uk_regions.svg"" />",County NorthernIreland
+uBJRaAnz}0,Aberdeenshire,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Aberdeenshire.svg"" />","<img src=""locator-Aberdeenshire.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+ly[z0h#y{P,Aberdeen City,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Aberdeen City.svg"" />","<img src=""locator-Aberdeen City.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+d6oPXD373a,Angus,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Angus.svg"" />","<img src=""locator-Angus.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+q:G@1I4QeV,Argyll and Bute,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Argyll and Bute.svg"" />","<img src=""locator-Argyll and Bute.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+kVsp&<529<,City of Edinburgh,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-City of Edinburgh.svg"" />","<img src=""locator-City of Edinburgh.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+p]svu8GE+Y,Clackmannanshire,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Clackmannanshire.svg"" />","<img src=""locator-Clackmannanshire.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+fXk@]RG7qz,Dumfries and Galloway,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Dumfries and Galloway.svg"" />","<img src=""locator-Dumfries and Galloway.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+b2$4+nKu~>,Dundee City,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Dundee City.svg"" />","<img src=""locator-Dundee City.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+l%uNZFvtk:,East Ayrshire,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-East Ayrshire.svg"" />","<img src=""locator-East Ayrshire.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+uuoHiRIVY!,East Dunbartonshire,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-East Dunbartonshire.svg"" />","<img src=""locator-East Dunbartonshire.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+jWcg;DLg*},East Lothian,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-East Lothian.svg"" />","<img src=""locator-East Lothian.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+m<m+1+iVR2,East Renfrewshire,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-East Renfrewshire.svg"" />","<img src=""locator-East Renfrewshire.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+m%!n1)F[|K,Falkirk,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Falkirk.svg"" />","<img src=""locator-Falkirk.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+ey[{$pT4jf,Fife,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Fife.svg"" />","<img src=""locator-Fife.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+f^eyTCC]mS,Glasgow City,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Glasgow City.svg"" />","<img src=""locator-Glasgow City.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+b*|3J|Xhn&,Highland,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Highland.svg"" />","<img src=""locator-Highland.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+pY!5=O8)Ab,Inverclyde,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Inverclyde.svg"" />","<img src=""locator-Inverclyde.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+pL=IEV&>mk,Midlothian,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Midlothian.svg"" />","<img src=""locator-Midlothian.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+g.^t<nl0pU,Moray,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Moray.svg"" />","<img src=""locator-Moray.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+qv941ueR`/,Outer Hebrides,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Outer Hebrides.svg"" />","<img src=""locator-Outer Hebrides.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+bz{F~5_OK-,North Ayrshire,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-North Ayrshire.svg"" />","<img src=""locator-North Ayrshire.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+u);7fbqY#P,North Lanarkshire,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-North Lanarkshire.svg"" />","<img src=""locator-North Lanarkshire.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+`X^9bL!>C,Orkney Islands,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Orkney Islands.svg"" />","<img src=""locator-Orkney Islands.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+ve=`?BX=Ef,Perth and Kinross,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Perth and Kinross.svg"" />","<img src=""locator-Perth and Kinross.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+d/emV$Qa73,Renfrewshire,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Renfrewshire.svg"" />","<img src=""locator-Renfrewshire.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+qThXK&|Ab;,Scottish Borders,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Scottish Borders.svg"" />","<img src=""locator-Scottish Borders.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+hC&2VDeofe,Shetland Islands,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Shetland Islands.svg"" />","<img src=""locator-Shetland Islands.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+fn#3v]!S=J,South Ayrshire,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-South Ayrshire.svg"" />","<img src=""locator-South Ayrshire.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+"q:]p8ca,UN",South Lanarkshire,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-South Lanarkshire.svg"" />","<img src=""locator-South Lanarkshire.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+"vT&,#3Kl:r",Stirling,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-Stirling.svg"" />","<img src=""locator-Stirling.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+c{W1_BsUtG,West Dunbartonshire,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-West Dunbartonshire.svg"" />","<img src=""locator-West Dunbartonshire.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+l!V^6`_!dJ,West Lothian,Scotland,,County,Region,"<img src=""uk_counties.svg"" />","<img src=""c-West Lothian.svg"" />","<img src=""locator-West Lothian.svg"" />","<img src=""uk_regions.svg"" />",County Scotland
+b-eU3OcO2y,Atlantic Ocean,,,Body of Water,,,"<img src=""bow-Atlantic Ocean.svg"" />",,,BoW
+$%Ynhh0R6,The Wash,,,Body of Water,,,"<img src=""bow-The Wash.svg"" />",,,BoW
+ne@4b:T0#+,Bristol Channel,,,Body of Water,,,"<img src=""bow-Bristol Channel.svg"" />",,,BoW
+evQpAL*fBY,Strait of Dover,,,Body of Water,,,"<img src=""bow-Strait of Dover.svg"" />",,,BoW
+iw&WaTB?u.,Firth of Forth,,,Body of Water,,,"<img src=""bow-Firth of Forth.svg"" />",,,BoW
+oe.!noXvHn,Theames Estuary,,,Body of Water,,,"<img src=""bow-Theames Estuary.svg"" />",,,BoW
+c:j7j>36$M,North Sea,,,Body of Water,,,"<img src=""bow-North Sea.svg"" />",,,BoW
+jv!UtoAs>i,The Humber,,,Body of Water,,,"<img src=""bow-The Humber.svg"" />",,,BoW
+o~;M:5mJeQ,Solway Firth,,,Body of Water,,,"<img src=""bow-Solway Firth.svg"" />",,,BoW
+jn/si2Y7e,English Channel,,,Body of Water,,,"<img src=""bow-English Channel.svg"" />",,,BoW
+"f~MG7SF,W[",Firth of Clyde,,,Body of Water,,,"<img src=""bow-Firth of Clyde.svg"" />",,,BoW
+eI;Y`p1m6I,North Channel,,,Body of Water,,,"<img src=""bow-North Channel.svg"" />",,,BoW
+"d~eI,^F]XM",St George's Channel,,,Body of Water,,,"<img src=""bow-St George's Channel.svg"" />",,,BoW
+gYzCPB16Dx,Irish Sea,,,Body of Water,,,"<img src=""bow-Irish Sea.svg"" />",,,BoW
+f){W@|O5a&,Celtic Sea,,,Body of Water,,,"<img src=""bow-Celtic Sea.svg"" />",,,BoW
+dK0n>g8>/E,Bath,Somerset,,City,County,,,"<img src=""c-Somerset.svg"" />","<img src=""uk_counties.svg"" />",City England
+iU$KVdU>Cw,Birmingham,West Midlands,,City,County,,,"<img src=""c-West Midlands.svg"" />","<img src=""uk_counties.svg"" />",City England
+u-2w:P|6Ir,Bradford,West Yorkshire,,City,County,,,"<img src=""c-West Yorkshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+c^C+HcRlx.,Brighton and Hove,East Sussex,,City,County,,,"<img src=""c-East Sussex.svg"" />","<img src=""uk_counties.svg"" />",City England
+gUAmD`%:Kq,Bristol,Bristol,,City,County,,,"<img src=""c-Bristol.svg"" />","<img src=""uk_counties.svg"" />",City England
+f`yC^TI_K+,Cambridge,Cambridgeshire,,City,County,,,"<img src=""c-Cambridgeshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+hG9r-QM08M,Canterbury,Kent,,City,County,,,"<img src=""c-Kent.svg"" />","<img src=""uk_counties.svg"" />",City England
+"j~lAPEY(T,",Carlisle,Cumbria,,City,County,,,"<img src=""c-Cumbria.svg"" />","<img src=""uk_counties.svg"" />",City England
+"qN}WsA>79,",Chelmsford,Essex,,City,County,,,"<img src=""c-Essex.svg"" />","<img src=""uk_counties.svg"" />",City England
+j}<t#&|0{f,Chester,Cheshire,,City,County,,,"<img src=""c-Cheshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+eP0w-sF#!K,Chichester,West Sussex,,City,County,,,"<img src=""c-West Sussex.svg"" />","<img src=""uk_counties.svg"" />",City England
+?B;+HJ:D/,Coventry,West Midlands,,City,County,,,"<img src=""c-West Midlands.svg"" />","<img src=""uk_counties.svg"" />",City England
+i+VO~;]zY=,Derby,Derbyshire,,City,County,,,"<img src=""c-Derbyshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+s<cce6T0]@,Durham,County Durham,,City,County,,,"<img src=""c-County Durham.svg"" />","<img src=""uk_counties.svg"" />",City England
+qnpyd6Gm4G,Ely,Cambridgeshire,,City,County,,,"<img src=""c-Cambridgeshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+c~!7`4<CAJ,Exeter,Devon,,City,County,,,"<img src=""c-Devon.svg"" />","<img src=""uk_counties.svg"" />",City England
+qiZisC81}k,Gloucester,Gloucestershire,,City,County,,,"<img src=""c-Gloucestershire.svg"" />","<img src=""uk_counties.svg"" />",City England
+faM<p~d%F(,Hereford,Herefordshire,,City,County,,,"<img src=""c-Herefordshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+lca=u5;~|Y,Kingston upon Hull,East Riding of Yorkshire,,City,County,,,"<img src=""c-East Riding of Yorkshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+dR}mPY$xB>,Lancaster,Lancashire,,City,County,,,"<img src=""c-Lancashire.svg"" />","<img src=""uk_counties.svg"" />",City England
+rCQ#Ic@BPW,Leeds,West Yorkshire,,City,County,,,"<img src=""c-West Yorkshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+iv@_vZ[7Dk,Leicester,Leicestershire,,City,County,,,"<img src=""c-Leicestershire.svg"" />","<img src=""uk_counties.svg"" />",City England
+cC]4g1n~wQ,Lichfield,Staffordshire,,City,County,,,"<img src=""c-Staffordshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+uO~&UMZk6$,Lincoln,Lincolnshire,,City,County,,,"<img src=""c-Lincolnshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+fpN#VJus%*,Liverpool,Merseyside,,City,County,,,"<img src=""c-Merseyside.svg"" />","<img src=""uk_counties.svg"" />",City England
+yUaR%ec@),City of London,City of London,,City,County,,,"<img src=""c-City of London.svg"" />","<img src=""uk_counties.svg"" />",City England
+l/Wjg)q-qZ,Manchester,Greater Manchester,,City,County,,,"<img src=""c-Greater Manchester.svg"" />","<img src=""uk_counties.svg"" />",City England
+uD#4.ECD`l,Newcastle upon Tyne,Tyne and Wear,,City,County,,,"<img src=""c-Tyne and Wear.svg"" />","<img src=""uk_counties.svg"" />",City England
+r^&_5(m]HJ,Norwich,Norfolk,,City,County,,,"<img src=""c-Norfolk.svg"" />","<img src=""uk_counties.svg"" />",City England
+o|G)(|#PDT,Nottingham,Nottinghamshire,,City,County,,,"<img src=""c-Nottinghamshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+d.cxX6_ESA,Oxford,Oxfordshire,,City,County,,,"<img src=""c-Oxfordshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+pGDcNFb-c=,Peterborough,Cambridgeshire,,City,County,,,"<img src=""c-Cambridgeshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+cRd-;7gAH%,Plymouth,Devon,,City,County,,,"<img src=""c-Devon.svg"" />","<img src=""uk_counties.svg"" />",City England
+gQbAsm;g>Z,Portsmouth,Hampshire,,City,County,,,"<img src=""c-Hampshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+ctIQ=qyJP.,Preston,Lancashire,,City,County,,,"<img src=""c-Lancashire.svg"" />","<img src=""uk_counties.svg"" />",City England
+t2Oen!H{[n,Ripon,North Yorkshire,,City,County,,,"<img src=""c-North Yorkshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+d;oV-j^Trt,Salford,Greater Manchester,,City,County,,,"<img src=""c-Greater Manchester.svg"" />","<img src=""uk_counties.svg"" />",City England
+bP|{aP]<8?,Salisbury,Wiltshire,,City,County,,,"<img src=""c-Wiltshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+qOA`X-;$|7,Sheffield,South Yorkshire,,City,County,,,"<img src=""c-South Yorkshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+ee`k?;O`X1,Southampton,Hampshire,,City,County,,,"<img src=""c-Hampshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+rDH5#/}D%o,St Albans,Hertfordshire,,City,County,,,"<img src=""c-Hertfordshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+dw+`wl.!w/,Stoke-on-Trent,Staffordshire,,City,County,,,"<img src=""c-Staffordshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+l<?NV@WYvZ,Sunderland,Tyne and Wear,,City,County,,,"<img src=""c-Tyne and Wear.svg"" />","<img src=""uk_counties.svg"" />",City England
+b2sB([?Oz@,Truro,Cornwall,,City,County,,,"<img src=""c-Cornwall.svg"" />","<img src=""uk_counties.svg"" />",City England
+vfb)4-g{hl,Wakefield,West Yorkshire,,City,County,,,"<img src=""c-West Yorkshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+c$P9.&{J$O,Wells,Somerset,,City,County,,,"<img src=""c-Somerset.svg"" />","<img src=""uk_counties.svg"" />",City England
+qO6*-=|rav,Westminster,Greater London,,City,County,,,"<img src=""c-Greater London.svg"" />","<img src=""uk_counties.svg"" />",City England
+pQbfRdN.wi,Winchester,Hampshire,,City,County,,,"<img src=""c-Hampshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+jW&R)K:Di&,Wolverhampton,West Midlands,,City,County,,,"<img src=""c-West Midlands.svg"" />","<img src=""uk_counties.svg"" />",City England
+uJi:`z6Yhd,Worcester,Worcestershire,,City,County,,,"<img src=""c-Worcestershire.svg"" />","<img src=""uk_counties.svg"" />",City England
+bp60`w9sFU,York,North Yorkshire,,City,County,,,"<img src=""c-North Yorkshire.svg"" />","<img src=""uk_counties.svg"" />",City England
+hhIGE`gQ]:,Aberdeen,Aberdeen City,,City,County,,,"<img src=""c-Aberdeen City.svg"" />","<img src=""uk_counties.svg"" />",City Scotland
+m;F[.AJfg=,Dundee,Dundee City,,City,County,,,"<img src=""c-Dundee City.svg"" />","<img src=""uk_counties.svg"" />",City Scotland
+"i,//kZd8T:",Edinburgh,City of Edinburgh,,City,County,,,"<img src=""c-City of Edinburgh.svg"" />","<img src=""uk_counties.svg"" />",City Scotland
+siM%;}X!r!,Glasgow,Glasgow City,,City,County,,,"<img src=""c-Glasgow City.svg"" />","<img src=""uk_counties.svg"" />",City Scotland
+b$b:nymwmZ,Inverness,Highland,,City,County,,,"<img src=""c-Highland.svg"" />","<img src=""uk_counties.svg"" />",City Scotland
+jLQ!k=)ZOq,Perth,Perth and Kinross,,City,County,,,"<img src=""c-Perth and Kinross.svg"" />","<img src=""uk_counties.svg"" />",City Scotland
+q-b4[$mMR?,Stirling,Stirling,,City,County,,,"<img src=""c-Stirling.svg"" />","<img src=""uk_counties.svg"" />",City Scotland
+ku&81MNWeo,Bangor,Gwynedd,,City,County,,,"<img src=""c-Gwynedd.svg"" />","<img src=""uk_counties.svg"" />",City Wales
+jQb(4svnRN,Cardiff,South Glamorgan,,City,County,,,"<img src=""c-South Glamorgan.svg"" />","<img src=""uk_counties.svg"" />",City Wales
+f-_nU@}<n.,Newport,Gwent,,City,County,,,"<img src=""c-Gwent.svg"" />","<img src=""uk_counties.svg"" />",City Wales
+u^TFq(ACtc,St Asaph,Clwyd,,City,County,,,"<img src=""c-Clwyd.svg"" />","<img src=""uk_counties.svg"" />",City Wales
+vr~Lav5@hp,St Davids,Dyfed,,City,County,,,"<img src=""c-Dyfed.svg"" />","<img src=""uk_counties.svg"" />",City Wales
+"g7H-KV,V#z",Swansea,West Glamorgan,,City,County,,,"<img src=""c-West Glamorgan.svg"" />","<img src=""uk_counties.svg"" />",City Wales
+l{{Y-cH!Ul,Armagh,County Armagh,,City,County,,,"<img src=""c-County Armagh.svg"" />","<img src=""uk_counties.svg"" />",City NorthernIreland
+dYog6{48Yu,Belfast,County Antrim,,City,County,,,"<img src=""c-County Antrim.svg"" />","<img src=""uk_counties.svg"" />",City NorthernIreland
+"m,G6f2xtm5",Lisburn,County Antrim / County Down,,City,County,,,,,City NorthernIreland
+uv|ugpmSZ/,Newry,County Armagh / County Down,,City,County,,,,,City NorthernIreland
+"b*l,%oG*1D",Derry,County Londonderry,,City,County,,,"<img src=""c-County Londonderry.svg"" />","<img src=""uk_counties.svg"" />",City NorthernIreland
