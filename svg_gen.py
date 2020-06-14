@@ -284,18 +284,18 @@ def gen_locator_maps(infile, outfolder):
 
             stroke_each(root, "locator", counties, outfolder, [stroke_colour]*len(counties))
 
+def minify_svgs(folder):
+    args = ["--enable-viewboxing", "--enable-id-stripping",
+            "--enable-comment-stripping", "--shorten-ids", "--indent=none"]
 
-
-
+    for filename in os.listdir(folder):
+        if filename.endswith(".svg"):
+            path = f"{folder}/{filename}"
+            t_path = f"{folder}/t-{filename}"
+            subprocess.run(["scour", "-i", path, "-o", t_path] + args)
+            subprocess.run(["mv", t_path, path])
 
 if __name__ == '__main__':
-
-    # parser = argparse.ArgumentParser()
-    # parser.add_argument("--infile", "-i", action="store", required=True)
-    # parser.add_argument("--outfolder", "-o", action="store", required=True)
-    # parser.add_argument("--xpath", "-x", action="store", default=AREAS_XPATH)
-    # args = vars(parser.parse_args())
-    # print(args)
 
     infile = "Map.svg"
     subprocess.run(["cp", infile, "src/media/uk_counties.svg"])
@@ -305,3 +305,4 @@ if __name__ == '__main__':
     regions(infile)
     counties(infile)
     gen_locator_maps(infile, "src/media")
+    minify_svgs("src/media")
