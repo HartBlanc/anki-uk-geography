@@ -86,6 +86,8 @@ def build_deck(prev_guids=[]):
 
 if __name__ == "__main__":
     with open("./src/data.csv", "r") as datafile:
-        guids = [row[0] for row in csv.reader(datafile)]
-        print(guids)
+        reader = csv.reader(datafile)
+        next(reader) 
+        guids = [row[0] for row in reader]
+    
     build_deck(guids)
