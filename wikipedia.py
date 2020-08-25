@@ -86,8 +86,10 @@ def get_infobox_items(article_url: str) -> Dict[str, str]:
 
 if __name__ == '__main__':
 
+    CITY_MAP_XPATH = '//div[@class="locmap noviewer thumb tleft"]/div/div[1]/div//a'
+
     city_urls = extract_links('https://en.wikipedia.org/wiki/List_of_cities_in_the_United_Kingdom',
-                              '/html/body/div[3]/div[3]/div[4]/div/div[5]/div/div[1]/div//a')
+                              CITY_MAP_XPATH)
 
     city_county = []
     for (city, url) in city_urls:
@@ -100,3 +102,4 @@ if __name__ == '__main__':
     with open("cities.csv", "w") as file:
         writer = csv.writer(file)
         writer.writerows(city_county)
+
