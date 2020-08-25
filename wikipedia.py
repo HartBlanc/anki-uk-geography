@@ -1,10 +1,10 @@
 """ Methods for parsing information from wikipedia articles. """
 
 import csv
-from typing import List, Dict, Tuple
+from typing import Dict, List, Tuple
 
-from lxml import html, etree
 import requests
+from lxml import etree, html
 
 
 def extract_links(wiki_url: str, link_xpath: str) -> List[Tuple[str, str]]:
@@ -61,7 +61,7 @@ def city_to_county(city: str, city_infobox: Dict[str, str]) -> str:
 
         return city_infobox[key]
 
-    print("ERROR", city_infobox)
+    raise ValueError(city_infobox)
 
 
 def get_infobox_items(article_url: str) -> Dict[str, str]:
@@ -72,7 +72,7 @@ def get_infobox_items(article_url: str) -> Dict[str, str]:
     r = requests.get(article_url)
     r.raise_for_status()
     tree = html.fromstring(r.text)
-    
+
     infobox_elem = tree.xpath("//table[contains(concat(' ',normalize-space(@class),' '),' infobox ')]")[0]
     label_elems = infobox_elem.xpath('.//th[@scope="row"]')
     value_elems = infobox_elem.xpath('.//th[@scope="row"]/following-sibling::td[1]')
@@ -102,4 +102,3 @@ if __name__ == '__main__':
     with open("cities.csv", "w") as file:
         writer = csv.writer(file)
         writer.writerows(city_county)
-
