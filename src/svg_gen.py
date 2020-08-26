@@ -27,10 +27,25 @@ PINK = "#ff69b4"
 DARK_OLIVE = "#556B2F"
 
 COUNTY_COLOURS = [LIME, BLUE, RED, CYAN, DARK_ORANGE, YELLOW, PURPLE, MAGENTA]
-REGION_COLOURS = [LIME, BLUE, RED, CYAN, DARK_ORANGE, YELLOW, PURPLE, MAGENTA, BLACK, GREEN, PERU, PINK]
+REGION_COLOURS = [
+    LIME,
+    BLUE,
+    RED,
+    CYAN,
+    DARK_ORANGE,
+    YELLOW,
+    PURPLE,
+    MAGENTA,
+    BLACK,
+    GREEN,
+    PERU,
+    PINK,
+]
 
 
-def get_style_attrib(attrib: str, element: etree.ElementBase, default: Optional[str] = None) -> Optional[str]:
+def get_style_attrib(
+    attrib: str, element: etree.ElementBase, default: Optional[str] = None
+) -> Optional[str]:
 
     style_str = element.get("style")
 
@@ -49,9 +64,9 @@ def get_style_attrib(attrib: str, element: etree.ElementBase, default: Optional[
 def set_style(attrib: str, element: etree.ElementBase, value: Optional[str]) -> None:
 
     if value is None:
-        raise ValueError(f"Cannot set {attrib} value to None, try \"none\" instead?")
+        raise ValueError(f'Cannot set {attrib} value to None, try "none" instead?')
 
-    style_str = element.get('style')
+    style_str = element.get("style")
     curr_value = get_style_attrib(attrib, element)
 
     if curr_value:
@@ -65,7 +80,7 @@ def set_style(attrib: str, element: etree.ElementBase, value: Optional[str]) -> 
 def set_style_recursive(attrib: str, element: etree.ElementBase, value: Optional[str]) -> None:
 
     if value is None:
-        raise ValueError(f"Cannot set {attrib} value to None, try \"none\" instead?")
+        raise ValueError(f'Cannot set {attrib} value to None, try "none" instead?')
 
     set_style(attrib, element, value)
 
@@ -73,9 +88,15 @@ def set_style_recursive(attrib: str, element: etree.ElementBase, value: Optional
         set_style_recursive(attrib, child, value)
 
 
-# TODO: check that fill/stroke both still work (set_attrib_children -> set_attrib / moving element to foreground)
-def file_per_attrib(attrib: str, root: etree.ElementBase, prefix: str, elements: List[etree.ElementBase],
-                    outfolder: Path, inactive_value: str = GREY, values: Optional[List[Optional[str]]] = None) -> None:
+def file_per_attrib(
+    attrib: str,
+    root: etree.ElementBase,
+    prefix: str,
+    elements: List[etree.ElementBase],
+    outfolder: Path,
+    inactive_value: str = GREY,
+    values: Optional[List[Optional[str]]] = None,
+) -> None:
     """
     Creates a new SVG file for each `element` in elements where `element` is
     highlighted using a value in values and all other elements have the inactive_value.
@@ -104,7 +125,7 @@ def file_per_attrib(attrib: str, root: etree.ElementBase, prefix: str, elements:
         parent.remove(element)
         parent.append(element)
 
-        element_name = element.get('id')
+        element_name = element.get("id")
 
         with (outfolder / f"{prefix}-{element_name}.svg").open(mode="wb") as attrib_file:
             attrib_file.write(etree.tostring(root))
@@ -128,7 +149,15 @@ def bodies_of_water(infile):
     set_style_recursive("fill", regions, GREY)
 
     b_o_w = list(root.xpath('//*[@id="Bodies of Water"]/*'))
-    file_per_attrib("fill", root, "bow", b_o_w, Path("crowdanki", "src", "media"), inactive_value="none", values=[DODGER_BLUE] * len(b_o_w))
+    file_per_attrib(
+        "fill",
+        root,
+        "bow",
+        b_o_w,
+        Path("crowdanki", "src", "media"),
+        inactive_value="none",
+        values=[DODGER_BLUE] * len(b_o_w),
+    )
 
 
 def regions(infile):
@@ -150,7 +179,14 @@ def regions(infile):
     with Path("crowdanki", "src", "media", "uk_regions.svg").open(mode="wb") as region_file:
         region_file.write(etree.tostring(svg_root))
 
-    file_per_attrib("fill", svg_root, "r", region_elems, Path("crowdanki", "src", "media"), values=REGION_COLOURS)
+    file_per_attrib(
+        "fill",
+        svg_root,
+        "r",
+        region_elems,
+        Path("crowdanki", "src", "media"),
+        values=REGION_COLOURS,
+    )
 
 
 def counties(infile):
@@ -174,10 +210,10 @@ def extract_counties_svg(infile, outfile):
     rows = []
 
     for region in regions:
-        region_name = region.attrib['id']
+        region_name = region.attrib["id"]
 
         for county in region.xpath("./*"):
-            county_name = county.attrib['id']
+            county_name = county.attrib["id"]
 
             rows.append([county_name, region_name])
 
@@ -196,21 +232,17 @@ def extract_bow_svg(infile, outfile):
 
     with open(outfile, "w") as file:
         writer = csv.writer(file)
-        writer.writerows([bow.attrib['id'] for bow in bows])
+        writer.writerows([bow.attrib["id"] for bow in bows])
 
 
 def gen_locator_maps(outfolder: Path):
-    """
-    For each region file:
-        fill_each(root, "locator", counties, outfolder, inactive_colour=region_colour, fills=[highlighted_colour]*len(counties))
-    """
 
     for child_path in outfolder.iterdir():
-        if child_path.name.startswith('r-'):
+        if child_path.name.startswith("r-"):
             with child_path.open(mode="rb") as svg_file:
                 svg_string = svg_file.read()
 
-            region = child_path.stem.replace('r-', '')
+            region = child_path.stem.replace("r-", "")
 
             root = etree.fromstring(svg_string)
             county_elems = list(root.xpath(f'//*[@id="{region}"]/*'))
@@ -221,12 +253,18 @@ def gen_locator_maps(outfolder: Path):
             if region_colour == BLACK:
                 stroke_colour = RED
 
-            file_per_attrib("stroke", root, "locator", county_elems, outfolder, values=[stroke_colour] * len(county_elems))
+            file_per_attrib(
+                "stroke",
+                root,
+                "locator",
+                county_elems,
+                outfolder,
+                values=[stroke_colour] * len(county_elems),
+            )
 
 
 def minify_svgs(folder):
-    args = ["--enable-viewboxing", "--enable-comment-stripping", "--shorten-ids",
-            "--indent=none"]
+    args = ["--enable-viewboxing", "--enable-comment-stripping", "--shorten-ids", "--indent=none"]
 
     for child_path in folder.iterdir():
         if child_path.suffix == ".svg":
@@ -235,7 +273,7 @@ def minify_svgs(folder):
             subprocess.run(["mv", str(temp_path), str(child_path)])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     MEDIA_FOLDER = Path("crowdanki", "src", "media")
 
