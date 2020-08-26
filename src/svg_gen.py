@@ -3,11 +3,16 @@
 import csv
 import subprocess
 from pathlib import Path
-from typing import List, Optional
+from typing import Optional, Sequence
 
 import lxml.etree as etree
 
-# TODO: Parameterise fill colours and sort out namespaces.
+# TODO: Move logic of moving shapes to the foregound into seperate function.
+# TODO: consider removal of bodies of water CSV
+# TODO: rename Areas id to Regions
+# TODO: create a county class in the svg
+# TODO: review get_style_attrib - try dict approach
+# TODO: consider whether everything can be refactored by using CSS instead
 
 WHITE = "#ffffff"
 GREY = "#efefef"
@@ -46,6 +51,15 @@ REGION_COLOURS = [
 def get_style_attrib(
     attrib: str, element: etree.ElementBase, default: Optional[str] = None
 ) -> Optional[str]:
+    """
+    Gets the value of a style `attrib` for an `element`, returning a `default` value
+    if the attribute is not set.
+
+    :param attrib: style attribute to retrieve value for
+    :param element: element from which to get style for
+    :param default: default value to return if attribute is not set
+    :return: the style attributes value
+    """
 
     style_str = element.get("style")
 
@@ -58,10 +72,18 @@ def get_style_attrib(
         if attrib in style:
             return style.split(":")[1]
 
-    return None
+    return default
 
 
 def set_style(attrib: str, element: etree.ElementBase, value: Optional[str]) -> None:
+    """
+    Sets a style `attrib` to `value` for an element, handling cases where the style
+    is or isn't defined and if the attribute is overwritten or set for the first time.
+
+    :param attrib: the style attribute to set
+    :param element: the element to set the style attribute for
+    :param value: the value to set the style attribute to
+    """
 
     if value is None:
         raise ValueError(f'Cannot set {attrib} value to None, try "none" instead?')
@@ -78,6 +100,13 @@ def set_style(attrib: str, element: etree.ElementBase, value: Optional[str]) -> 
 
 
 def set_style_recursive(attrib: str, element: etree.ElementBase, value: Optional[str]) -> None:
+    """
+    Sets a style `attrib` to `value` for an element, and all of it's children elements.
+
+    :param attrib: the style attribute to set
+    :param element: the root element to set the style attribute for
+    :param value: the value to set the style attribute to
+    """
 
     if value is None:
         raise ValueError(f'Cannot set {attrib} value to None, try "none" instead?')
@@ -92,10 +121,10 @@ def file_per_attrib(
     attrib: str,
     root: etree.ElementBase,
     prefix: str,
-    elements: List[etree.ElementBase],
+    elements: Sequence[etree.ElementBase],
     outfolder: Path,
     inactive_value: str = GREY,
-    values: Optional[List[Optional[str]]] = None,
+    values: Optional[Sequence[Optional[str]]] = None,
 ) -> None:
     """
     Creates a new SVG file for each `element` in elements where `element` is
@@ -133,20 +162,21 @@ def file_per_attrib(
         set_style_recursive(attrib, element, inactive_value)
 
 
-def bodies_of_water(infile):
+def bodies_of_water(bow_template_svg: Path) -> None:
     """
-    Select all regions, set fill to gray
-    for each body of water:
-        set to blue
-        write to file
-        set to none
+    Generates an SVG file for each body of water, where the body of water is blue,
+    all regions/counties are grey and other bodies of water are transparent.
+
+    :param bow_template_svg: an SVG file which contains all of the BoW elements
+                             two levels below the areas id
     """
-    with open(infile, "rb") as svg_file:
+
+    with open(bow_template_svg, "rb") as svg_file:
         svg_string = svg_file.read()
 
     root = etree.fromstring(svg_string)
-    regions = root.xpath('//*[@id="Areas"]')[0]
-    set_style_recursive("fill", regions, GREY)
+    region_group = root.xpath('//*[@id="Areas"]')[0]
+    set_style_recursive("fill", region_group, GREY)
 
     b_o_w = list(root.xpath('//*[@id="Bodies of Water"]/*'))
     file_per_attrib(
@@ -155,19 +185,23 @@ def bodies_of_water(infile):
         "bow",
         b_o_w,
         Path("crowdanki", "src", "media"),
-        inactive_value="none",
+        inactive_value="none",  # transparent
         values=[DODGER_BLUE] * len(b_o_w),
     )
 
 
-def regions(infile):
+def generate_region_svgs(region_template_svg: Path) -> None:
     """
-    Select all regions, set fill to gray
-    for each region:
-        set to fill colour
+    1. Generates an SVG file where each region is coloured according to a colour
+       in REGION_COLOURS.
+    2. Generates an SVG file for *each region*, where the region has a fill
+       colour from REGION_COLOURS and all other regions are coloured grey.
+
+    :param region_template_svg: an SVG file which contains all of the region
+                                elements one level below the areas id.
     """
 
-    with open(infile, "rb") as svg_file:
+    with open(region_template_svg, "rb") as svg_file:
         svg_string = svg_file.read()
 
     svg_root = etree.fromstring(svg_string)
@@ -189,27 +223,41 @@ def regions(infile):
     )
 
 
-def counties(infile):
-    with open(infile, "rb") as svg_file:
+def generate_county_svgs(county_template_svg: Path) -> None:
+    """
+    Generates an SVG file for each county, where the county has it's fill colour in the
+    template, and all other counties are coloured grey.
+
+    :param county_template_svg: an SVG file which contains all of the county elements
+           two levels below the areas id
+    """
+
+    with open(county_template_svg, "rb") as svg_file:
         svg_string = svg_file.read()
 
     root = etree.fromstring(svg_string)
-    counties = list(root.xpath('//*[@id="Areas"]/*/*'))
+    county_elems = list(root.xpath('//*[@id="Areas"]/*/*'))
 
-    file_per_attrib("fill", root, "c", counties, Path("crowdanki", "src", "media"))
+    file_per_attrib("fill", root, "c", county_elems, Path("crowdanki", "src", "media"))
 
 
-def extract_counties_svg(infile, outfile):
+def extract_county_region_mapping(county_region_svg: Path, county_region_csv: Path) -> None:
+    """
+    Generates a CSV file with a county and it's corresponding region on each line.
 
-    with open(infile, "rb") as svg_file:
+    :param county_region_svg: the path to an svg file with an Areas group
+    :param county_region_csv: the path to write the mapping csv to.
+    """
+
+    with open(county_region_svg, "rb") as svg_file:
         svg_string = svg_file.read()
 
     root = etree.fromstring(svg_string)
-    regions = list(root.xpath('//*[@id="Areas"]/*'))
+    region_elems = list(root.xpath('//*[@id="Areas"]/*'))
 
     rows = []
 
-    for region in regions:
+    for region in region_elems:
         region_name = region.attrib["id"]
 
         for county in region.xpath("./*"):
@@ -217,27 +265,43 @@ def extract_counties_svg(infile, outfile):
 
             rows.append([county_name, region_name])
 
-    with open(outfile, "w") as file:
+    with open(county_region_csv, "w") as file:
         writer = csv.writer(file)
         writer.writerows(rows)
 
 
-def extract_bow_svg(infile, outfile):
+def extract_bow_names(bow_svg: Path, bow_csv: Path) -> None:
+    """
+    Generates a CSV file with a name for a Body of Water on each line.
 
-    with open(infile, "rb") as svg_file:
+    :param bow_svg: the path to an svg file with a Bodies of Water group
+    :param bow_csv: the path to write the body of water names to.
+    """
+
+    with bow_svg.open(mode="rb") as svg_file:
         svg_string = svg_file.read()
 
     root = etree.fromstring(svg_string)
     bows = list(root.xpath('//*[@id="Bodies of Water"]/*'))
 
-    with open(outfile, "w") as file:
+    with open(bow_csv, "w") as file:
         writer = csv.writer(file)
         writer.writerows([bow.attrib["id"] for bow in bows])
 
 
-def gen_locator_maps(outfolder: Path):
+def gen_locator_maps(region_dir: Path, locator_dir: Path) -> None:
+    """
+    Generates an SVG file for each county which highlights that county in the
+    context of it's region by changing the stroke of the county and moving it
+    to the foreground.
 
-    for child_path in outfolder.iterdir():
+    :param region_dir: the directory in which region maps can be found
+                       (region files should be prefixed with "r-")
+    :param locator_dir: the director to write locator maps to,
+                        (locator files will be prefixed with "locator-")
+    """
+
+    for child_path in region_dir.iterdir():
         if child_path.name.startswith("r-"):
             with child_path.open(mode="rb") as svg_file:
                 svg_string = svg_file.read()
@@ -258,17 +322,24 @@ def gen_locator_maps(outfolder: Path):
                 root,
                 "locator",
                 county_elems,
-                outfolder,
+                locator_dir,
                 values=[stroke_colour] * len(county_elems),
             )
 
 
-def minify_svgs(folder):
+def minify_svgs(svg_folder: Path):
+    """
+    Reduces the size of all SVG files in a folder by stripping comments, shortening ids
+    and removing whitespace. Uses the scour package.
+
+    :param svg_folder: a folder which contains SVG files to be minimised.
+    """
+
     args = ["--enable-viewboxing", "--enable-comment-stripping", "--shorten-ids", "--indent=none"]
 
-    for child_path in folder.iterdir():
+    for child_path in svg_folder.iterdir():
         if child_path.suffix == ".svg":
-            temp_path = folder / f"t-{child_path.name}"
+            temp_path = svg_folder / f"t-{child_path.name}"
             subprocess.run(["scour", "-i", str(child_path), "-o", str(temp_path)] + args)
             subprocess.run(["mv", str(temp_path), str(child_path)])
 
@@ -276,13 +347,13 @@ def minify_svgs(folder):
 if __name__ == "__main__":
 
     MEDIA_FOLDER = Path("crowdanki", "src", "media")
+    TEMPLATE_MAP = Path("template_map.svg")
 
-    infile = "template_map.svg"
-    subprocess.run(["cp", infile, str(MEDIA_FOLDER / "uk_counties.svg")])
-    extract_counties_svg(infile, "counties.csv")
-    extract_bow_svg(infile, "bow.csv")
-    bodies_of_water(infile)
-    regions(infile)
-    counties(infile)
-    gen_locator_maps(MEDIA_FOLDER)
+    subprocess.run(["cp", str(TEMPLATE_MAP), str(MEDIA_FOLDER / "uk_counties.svg")])
+    extract_county_region_mapping(TEMPLATE_MAP, Path("counties.csv"))
+    extract_bow_names(TEMPLATE_MAP, Path("bow.csv"))
+    bodies_of_water(TEMPLATE_MAP)
+    generate_region_svgs(TEMPLATE_MAP)
+    generate_county_svgs(TEMPLATE_MAP)
+    gen_locator_maps(MEDIA_FOLDER, MEDIA_FOLDER)
     minify_svgs(MEDIA_FOLDER)
