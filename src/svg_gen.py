@@ -1,4 +1,4 @@
-""" Methods for generating svg files associated with each card """
+""" Methods for generating the svg map files associated with each card """
 
 import csv
 import subprocess
