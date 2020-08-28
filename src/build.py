@@ -4,7 +4,7 @@
 
 import csv
 from pathlib import Path
-from typing import Generator, Optional, Sequence, TypeVar
+from typing import Iterator, Optional, Sequence, TypeVar
 
 region_country = {
     "Scotland": "Scotland",
@@ -24,7 +24,7 @@ region_country = {
 A = TypeVar("A")
 
 
-def pad_none(items: Sequence[A]) -> Generator[Optional[A], None, None]:
+def pad_none(items: Sequence[A]) -> Iterator[Optional[A]]:
     """A generator which pads the end of a sequence with Nones"""
 
     count = 0
