@@ -286,7 +286,7 @@ def extract_bow_names(bow_svg: Path, bow_csv: Path) -> None:
 
     with open(bow_csv, "w") as file:
         writer = csv.writer(file)
-        writer.writerows([bow.attrib["id"] for bow in bows])
+        writer.writerows([[bow.attrib["id"]] for bow in bows])
 
 
 def gen_locator_maps(region_dir: Path, locator_dir: Path) -> None:
