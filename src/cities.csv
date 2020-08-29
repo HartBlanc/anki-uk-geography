@@ -1,5 +1,6 @@
+City,County
 Bath,Somerset
-Birmingham,West Midlands
+Birmingham,West Midlands (county)
 Bradford,West Yorkshire
 Brighton and Hove,East Sussex
 Bristol,Bristol
@@ -9,7 +10,7 @@ Carlisle,Cumbria
 Chelmsford,Essex
 Chester,Cheshire
 Chichester,West Sussex
-Coventry,West Midlands
+Coventry,West Midlands (county)
 Derby,Derbyshire
 Durham,County Durham
 Ely,Cambridgeshire
@@ -46,24 +47,24 @@ Wakefield,West Yorkshire
 Wells,Somerset
 Westminster,Greater London
 Winchester,Hampshire
-Wolverhampton,West Midlands
+Wolverhampton,West Midlands (county)
 Worcester,Worcestershire
 York,North Yorkshire
 Aberdeen,Aberdeen City
 Dundee,Dundee City
 Edinburgh,City of Edinburgh
 Glasgow,Glasgow City
-Inverness,Highland
+Inverness,Highland (council area)
 Perth,Perth and Kinross
-Stirling,Stirling
+Stirling,Stirling (council area)
 Bangor,Gwynedd
 Cardiff,South Glamorgan
-Newport,Gwent
+Newport,Gwent (county)
 St Asaph,Clwyd
 St Davids,Dyfed
 Swansea,West Glamorgan
 Armagh,County Armagh
-Belfast,County Antrim
+Belfast,County Antrim / County Down
 Lisburn,County Antrim / County Down
 Newry,County Armagh / County Down
 Derry,County Londonderry

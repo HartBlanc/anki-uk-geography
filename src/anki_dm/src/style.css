@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+}
+
+svg {
+	max-height: 98%;
+	max-width: 98%;
+}
+
+.grow-section {
+  display: flex;
+  flex-flow: column;
+  height: 90vh;
+}
+
+.grow-section .grow{
+	flex-grow: 1;
+	overflow: auto;
+}
+
+.card {
+  padding: 1em 0;
+  background-color: white;
+  color: black;
+  font-family: Verdana;
+  font-size: 16px;
+  text-align: center;
+}
+
+.type {
+  margin-bottom: 0.25em;
+  color: #333;
+  font-size: 70%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info {
+  max-width: 30em;
+  margin: 0.75em auto;
+  color: #333;
+  font-size: 90%;
+  font-style: italic;
+}
+
+.value {
+  font-size: 150%;
+}
+
+.value--top {
+  margin-top: 1em;
+}
+
+hr {
+  margin: 1.5em 0;
+}
+
+@keyframes jump {
+    0% { transform: translate(0px, 2px); }
+    20% { transform: translate(0px, 2px); }
+    40% { transform: translate(0px, 2px); }
+    60% { transform: translate(0px, -2px); }
+    80% { transform: translate(0px, -2px); }
+    100% { transform: translate(0px, -2px); }
+  }

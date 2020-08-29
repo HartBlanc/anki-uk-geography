@@ -6,9 +6,6 @@ from typing import Dict, List, Tuple
 import requests
 from lxml import html
 
-# TODO: Consider using CSSSelector instead of XPaths
-# TODO: Consider wrapping infobox logic in a class
-
 
 def extract_links(wiki_url: str, link_xpath: str) -> List[Tuple[str, str]]:
     """
@@ -53,7 +50,7 @@ def city_to_county(city: str, city_infobox: Dict[str, str]) -> str:
 
     elif city_infobox[country_type] in ("England", "Wales", "Northern Ireland"):
         if "status" in city_infobox:
-            if "county" in city_infobox["status"]:
+            if "counties of england" in city_infobox["status"].lower():
                 return city
 
         if "ceremonial county" in city_infobox:
@@ -82,7 +79,7 @@ def get_infobox_items(article_url: str) -> Dict[str, str]:
         "//table[contains(concat(' ',normalize-space(@class),' '),' infobox ')]"
     )[0]
     label_elems = infobox_elem.xpath('.//th[@scope="row"]')
-    value_elems = infobox_elem.xpath('.//th[@scope="row"]/following-sibling::td[1]')
+    value_elems = infobox_elem.xpath('.//th[@scope="row"]/../td')
 
     labels = [
         " ".join(elem.xpath(".//text()")).lower().replace("\xa0", " ").strip()
@@ -90,7 +87,16 @@ def get_infobox_items(article_url: str) -> Dict[str, str]:
     ]
 
     values = [
-        " ".join(elem.xpath(".//text()")).replace("\xa0", " ").strip() for elem in value_elems
+        " / ".join(
+            link_elem.attrib["href"].replace("/wiki/", "").replace("_", " ")
+            for link_elem in elem.xpath(".//a")
+        )
+        for elem in value_elems
+    ]
+
+    values = [
+        values[i] if values[i] else " ".join(elem.xpath(".//text()")).replace("\xa0", " ").strip()
+        for i, elem in enumerate(value_elems)
     ]
 
     assert len(labels) == len(values)
@@ -106,14 +112,11 @@ if __name__ == "__main__":
         "https://en.wikipedia.org/wiki/List_of_cities_in_the_United_Kingdom", CITY_MAP_XPATH
     )
 
-    city_county = []
-    for (city, url) in city_urls:
-
-        infobox_map = get_infobox_items(url)
-        county = city_to_county(city, infobox_map)
-        print("City:", f"{city},", "County:", county)
-        city_county.append((city, county))
-
     with open("cities.csv", "w") as file:
-        writer = csv.writer(file)
-        writer.writerows(city_county)
+        writer = csv.DictWriter(file, fieldnames=["City", "County"])
+        writer.writeheader()
+        for (city, url) in city_urls:
+            infobox_map = get_infobox_items(url)
+            county = city_to_county(city, infobox_map)
+            print("City:", f"{city},", "County:", county)
+            writer.writerow({"City": city, "County": county})

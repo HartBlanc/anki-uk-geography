@@ -1,0 +1,29 @@
+{
+  "deck": {
+    "uuid": "e9bb5f01-3521-435b-80e2-cc6c659aeab2"
+  },
+  "config": {
+    "name": "Default",
+    "uuid": "b075974b-3d82-43d1-8947-28d8976a023d"
+  },
+  "model": {
+    "name": "UK Geog",
+    "uuid": "7bdd71a0-a5fe-47bf-a416-a5efda5c79c7"
+  },
+  "fields": [
+    "Location",
+    "MacroLocation",
+    "City",
+    "County",
+    "Region",
+    "BoW",
+    "Fill",
+    "MacroFill",
+    "tags"
+  ],
+  "templates": [
+    "Location - Map",
+    "Map - Location",
+    "Location - Macrolocation"
+  ]
+}
