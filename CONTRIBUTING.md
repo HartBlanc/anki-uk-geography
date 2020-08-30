@@ -27,18 +27,20 @@ Here's a diagram explaining the high level process of how to build the deck from
 ![](img/UK_Geog_Data_Flow.svg)
 
 ## SVG IDs and anki templates
-So how does Anki know which region to highlight on each card? and what colour to
-highlight it? and which cards to generate? This behaviour is specified in the
+So how does Anki know which region to highlight on each card? and which colour to
+highlight it? and which cards to generate?
+
+This behaviour is specified in the
 templates in `src/anki-dm/templates` using 
 [conditional replacement](https://docs.ankiweb.net/#/templates/generation?id=conditional-replacement)
 and [template variables](https://docs.ankiweb.net/#/templates/intro?id=card-templates).
 
-The fill colours are specified in `src/uk_*.svg` and passed to anki-dm as fields 
-in `data.csv` by `build.py`.
+The fill colours are specified in the SVG files (`src/uk_*.svg`) and passed to
+anki-dm as fields in `data.csv` by `build.py`.
 
 Note that the element ids in the SVG must align with the wikipedia url for counties
 (with "_" replaced with space and quotes removed). This ensures unqiueness, for
 example West Midlands is both a county and a region, and also ensures a reliable 
-predictable mapping for cities to counties. For example the West Midlands county 
+predictable mapping from cities to counties. For example the West Midlands county 
 has ID **West Midlands (county)** in each svg file in `src/uk_*.svg` because it's 
 Wikipedia URL is **https://en.wikipedia.org/wiki/West_Midlands_(region)** 

@@ -23,7 +23,7 @@ The deck will help you to learn:
 **Deck Features**
 - The deck is light-weight (~1MB, despite containing ~205 unique images)
 - All images are Scalable Vector Graphics and therefore scale gracefully to any screen size without distortion
-- Colours are distribued across maps to encourage colour-based memory etention
+- Colours are distribued across maps to encourage colour-based memory retention
 - CSS is used to generate unique images and to animate cards
 
 ## Sample Cards
