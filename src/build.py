@@ -166,10 +166,14 @@ def build_deck_csv(anki_dm_src_path: Path, guids: Optional[Sequence[str]] = None
 
 
 if __name__ == "__main__":
-    # with Path("crowdanki", "src", "data.csv").open(mode="r") as curr_datafile:
+
+    SRC_FOLDER = Path("anki_dm", "src")
+
+    # with (SRC_FOLDER / "data.csv").open(mode="r") as curr_datafile:
     #     reader = csv.DictReader(curr_datafile)
     #     next(reader)  # Skip header row
     #     curr_guids = [row["guid"] for row in reader]
     #
     # build_deck(curr_guids)
-    build_deck_csv(Path("anki_dm", "src"))
+
+    build_deck_csv(SRC_FOLDER)

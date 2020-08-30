@@ -9,7 +9,6 @@ pre-commit = "*"
 [packages]
 requests = "*"
 lxml = "*"
-scour = "*"
 
 [requires]
 python_version = "3.8"
