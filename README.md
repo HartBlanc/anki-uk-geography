@@ -33,7 +33,7 @@ Type                       |  Front                    |  Back
 **County -> Region**       |  ![](img/card_samples/County_Region_Question.png)   | ![](img/card_samples/County_Region_Answer.png)
 **County -> Map**          | ![](img/card_samples/County_Map_Question.png) | ![](img/card_samples/County_Map_Answer.png)
 **Map -> County**          | ![](img/card_samples/Map_County_Question.png) | ![](img/card_samples/Map_County_Answer.png)
-**City -> County**         | ![](img/card_samples/City_County_Question.png) | ![](img/card_samples/County_Region_Answer.png)
+**City -> County**         | ![](img/card_samples/City_County_Question.png) | ![](img/card_samples/City_County_Answer.png)
 **Map -> Body of Water**   | ![](img/card_samples/Map_BoW_Question.png) | ![](img/card_samples/Map_BoW_Answer.png)
 
 
