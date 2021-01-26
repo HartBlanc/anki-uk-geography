@@ -21,10 +21,10 @@ The deck will help you to learn:
 - 15 assorted seas, channels, estuaries, straits and oceans
 
 **Deck Features**
-- The deck is light-weight (~1MB, despite containing ~205 unique images)
+- The deck is light-weight (~3MB, despite containing ~500 images)
 - All images are Scalable Vector Graphics and therefore scale gracefully to any screen size without distortion
 - Colours are distribued across maps to encourage colour-based memory retention
-- CSS is used to generate unique images and to animate cards
+- CSS and JS are used to generate and animate images
 
 ## Sample Cards
 
