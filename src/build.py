@@ -57,6 +57,7 @@ def build_deck_csv(anki_dm_src_path: Path, guids: Optional[Sequence[str]] = None
     with (anki_dm_src_path / "data.csv").open(mode="w") as outfile:
         fieldnames = [
             "guid",
+            "Location",
             "MacroLocation",
             "City",
             "County",
@@ -83,6 +84,7 @@ def build_deck_csv(anki_dm_src_path: Path, guids: Optional[Sequence[str]] = None
             writer.writerow(
                 {
                     "guid": next(padded_guids),
+                    "Location": region_name,
                     "Region": region_name,
                     "tags": f"Region {region_country[region_name]}",
                 }
@@ -106,6 +108,7 @@ def build_deck_csv(anki_dm_src_path: Path, guids: Optional[Sequence[str]] = None
                 writer.writerow(
                     {
                         "guid": next(padded_guids),
+                        "Location": county_name,
                         "MacroLocation": region_name,
                         "County": county_name,
                         "tags": f"County {county_country[county_name]}",
@@ -117,7 +120,9 @@ def build_deck_csv(anki_dm_src_path: Path, guids: Optional[Sequence[str]] = None
 
         for bow_elem in bow_elems:
             bow_name = bow_elem.attrib["id"]
-            writer.writerow({"guid": next(padded_guids), "BoW": bow_name, "tags": "BoW"})
+            writer.writerow(
+                {"guid": next(padded_guids), "Location": bow_name, "BoW": bow_name, "tags": "BoW"}
+            )
 
         # Cities
         with open("cities.csv", "r") as csvfile:
@@ -133,6 +138,7 @@ def build_deck_csv(anki_dm_src_path: Path, guids: Optional[Sequence[str]] = None
             writer.writerow(
                 {
                     "guid": next(padded_guids),
+                    "Location": city_name,
                     "MacroLocation": county_name,
                     "City": city_name,
                     "tags": f"City {country}",
