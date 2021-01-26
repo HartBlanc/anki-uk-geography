@@ -28,13 +28,18 @@ The deck will help you to learn:
 
 ## Sample Cards
 
-Type                       |  Front                    |  Back
-:-------------------------:|:-------------------------:|:-------------------------:
-**County -> Region**       |  ![](img/card_samples/County_Region_Question.png)   | ![](img/card_samples/County_Region_Answer.png)
-**County -> Map**          | ![](img/card_samples/County_Map_Question.png) | ![](img/card_samples/County_Map_Answer.png)
-**Map -> County**          | ![](img/card_samples/Map_County_Question.png) | ![](img/card_samples/Map_County_Answer.png)
-**City -> County**         | ![](img/card_samples/City_County_Question.png) | ![](img/card_samples/City_County_Answer.png)
-**Map -> Body of Water**   | ![](img/card_samples/Map_BoW_Question.png) | ![](img/card_samples/Map_BoW_Answer.png)
+Type                       |  Front                                            |  Back
+:-------------------------:|:-------------------------------------------------:|:---------------------------------------------:
+**Body of Water -> Map**   | ![](img/card_samples/BoW_Map_Question.png)        | ![](img/card_samples/BoW_Map_Answer.png)
+**City -> County**         | ![](img/card_samples/City_County_Question.png)    | ![](img/card_samples/City_County_Answer.png)
+**City -> Map**            | ![](img/card_samples/City_Map_Question.png)       | ![](img/card_samples/City_Map_Answer.png)
+**County -> Map**          | ![](img/card_samples/County_Map_Question.png)     | ![](img/card_samples/County_Map_Answer.png)
+**County -> Region**       |  ![](img/card_samples/County_Region_Question.png) | ![](img/card_samples/County_Region_Answer.png)
+**Map -> Body of Water**   | ![](img/card_samples/Map_BoW_Question.png)        | ![](img/card_samples/Map_BoW_Answer.png)
+**Map -> City**            | ![](img/card_samples/Map_City_Question.png)       | ![](img/card_samples/Map_City_Answer.png)
+**Map -> County**          | ![](img/card_samples/Map_County_Question.png)     | ![](img/card_samples/Map_County_Answer.png)
+**Map -> Region**          | ![](img/card_samples/Map_Region_Question.png)     | ![](img/card_samples/Map_Region_Answer.png)
+**Region -> Map**          | ![](img/card_samples/Region_Map_Question.png)     | ![](img/card_samples/Region_Map_Answer.png)
 
 
 ## Acknowledgments
