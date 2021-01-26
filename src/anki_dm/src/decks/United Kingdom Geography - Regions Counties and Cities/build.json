@@ -11,6 +11,7 @@
     "uuid": "7bdd71a0-a5fe-47bf-a416-a5efda5c79c7"
   },
   "fields": [
+    "Location",
     "MacroLocation",
     "City",
     "County",
