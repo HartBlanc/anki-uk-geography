@@ -11,19 +11,22 @@
     "uuid": "7bdd71a0-a5fe-47bf-a416-a5efda5c79c7"
   },
   "fields": [
-    "Location",
     "MacroLocation",
     "City",
     "County",
     "Region",
-    "BoW",
-    "Fill",
-    "MacroFill",
-    "tags"
+    "BoW"
   ],
   "templates": [
-    "Location - Map",
-    "Map - Location",
-    "Location - Macrolocation"
+    "BoW - Map",
+    "City - County",
+    "City - Map",
+    "County - Map",
+    "County - Region",
+    "Map - BoW",
+    "Map - City",
+    "Map - County",
+    "Map - Region",
+    "Region - Map"
   ]
 }

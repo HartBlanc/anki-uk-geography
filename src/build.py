@@ -57,14 +57,11 @@ def build_deck_csv(anki_dm_src_path: Path, guids: Optional[Sequence[str]] = None
     with (anki_dm_src_path / "data.csv").open(mode="w") as outfile:
         fieldnames = [
             "guid",
-            "Location",
             "MacroLocation",
             "City",
             "County",
             "Region",
             "BoW",
-            "Fill",
-            "MacroFill",
             "tags",
         ]
         writer = csv.DictWriter(outfile, fieldnames=fieldnames)
@@ -82,14 +79,11 @@ def build_deck_csv(anki_dm_src_path: Path, guids: Optional[Sequence[str]] = None
 
         for region_elem in region_elems:
             region_name = region_elem.attrib["id"]
-            fill_colour = region_elem.attrib["fill"]
 
             writer.writerow(
                 {
                     "guid": next(padded_guids),
-                    "Location": region_name,
                     "Region": region_name,
-                    "Fill": fill_colour,
                     "tags": f"Region {region_country[region_name]}",
                 }
             )
@@ -99,30 +93,21 @@ def build_deck_csv(anki_dm_src_path: Path, guids: Optional[Sequence[str]] = None
             svg_string = svg_file.read()
 
         svg_root = etree.fromstring(svg_string)
-
         region_elems = list(svg_root.xpath('//*[@id="Regions"]/*'))
-
         county_country = dict()
-        county_fill = dict()
 
         for region_elem in region_elems:
             region_name = region_elem.attrib["id"]
-            region_colour = region_elem.attrib["fill"]
             for county_elem in region_elem.xpath("./*"):
                 county_name = county_elem.attrib["id"]
-                fill_colour = county_elem.attrib["fill"]
                 print(county_name)
                 county_country[county_name] = region_country[region_name]
-                county_fill[county_name] = fill_colour
 
                 writer.writerow(
                     {
                         "guid": next(padded_guids),
-                        "Location": county_name,
                         "MacroLocation": region_name,
                         "County": county_name,
-                        "Fill": fill_colour,
-                        "MacroFill": region_colour,
                         "tags": f"County {county_country[county_name]}",
                     }
                 )
@@ -132,15 +117,7 @@ def build_deck_csv(anki_dm_src_path: Path, guids: Optional[Sequence[str]] = None
 
         for bow_elem in bow_elems:
             bow_name = bow_elem.attrib["id"]
-            writer.writerow(
-                {
-                    "guid": next(padded_guids),
-                    "Location": bow_name,
-                    "BoW": bow_name,
-                    "Fill": "#29f",
-                    "tags": "BoW",
-                }
-            )
+            writer.writerow({"guid": next(padded_guids), "BoW": bow_name, "tags": "BoW"})
 
         # Cities
         with open("cities.csv", "r") as csvfile:
@@ -156,10 +133,8 @@ def build_deck_csv(anki_dm_src_path: Path, guids: Optional[Sequence[str]] = None
             writer.writerow(
                 {
                     "guid": next(padded_guids),
-                    "Location": city_name,
                     "MacroLocation": county_name,
                     "City": city_name,
-                    "MacroFill": county_fill.get(county_name, None),
                     "tags": f"City {country}",
                 }
             )
@@ -169,11 +144,9 @@ if __name__ == "__main__":
 
     SRC_FOLDER = Path("anki_dm", "src")
 
-    # with (SRC_FOLDER / "data.csv").open(mode="r") as curr_datafile:
-    #     reader = csv.DictReader(curr_datafile)
-    #     next(reader)  # Skip header row
-    #     curr_guids = [row["guid"] for row in reader]
-    #
-    # build_deck(curr_guids)
+    with (SRC_FOLDER / "data.csv").open(mode="r") as curr_datafile:
+        reader = csv.DictReader(curr_datafile)
+        curr_guids = [row["guid"] for row in reader]
 
-    build_deck_csv(SRC_FOLDER)
+    build_deck_csv(SRC_FOLDER, curr_guids)
+    # build_deck_csv(SRC_FOLDER)
