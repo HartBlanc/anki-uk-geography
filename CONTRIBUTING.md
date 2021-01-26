@@ -43,4 +43,4 @@ Note that the element ids in the SVG must align with the wikipedia url for count
 example West Midlands is both a county and a region, and also ensures a reliable 
 predictable mapping from cities to counties. For example the West Midlands county 
 has ID **West Midlands (county)** in each svg file in `src/uk_*.svg` because it's 
-Wikipedia URL is **https://en.wikipedia.org/wiki/West_Midlands_(region)** 
+Wikipedia URL is **https://en.wikipedia.org/wiki/West_Midlands_(county)** 
