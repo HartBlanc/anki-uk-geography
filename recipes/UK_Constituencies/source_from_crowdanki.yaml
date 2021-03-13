@@ -1,0 +1,31 @@
+- build_parts:
+  - notes_from_crowd_anki:
+      source: &deck_name "build/United Kingdom_Geography - Constituencies"
+      part_id: uk constituencies notes
+      sort_order: [Constituency]
+
+  - note_models_from_crowd_anki:
+    - source: *deck_name
+      part_id: UK Geog Constituencies
+
+  - headers_from_crowd_anki:
+    - source: *deck_name
+      part_id: uk constituencies header
+      save_to_file: src/headers/UK_Constituencies/default.yaml
+
+- generate_csvs:
+    notes: uk constituencies notes
+
+    note_model_mappings:
+    - note_models:
+        - UK Geog Constituencies
+      columns_to_fields:
+        guid: guid
+        tags: tags
+        Constituency: Constituency
+        Counties: Counties
+      personal_fields: []
+
+    file_mappings:
+    - file: src/data/uk_constituencies.csv
+      note_model: UK Geog Constituencies

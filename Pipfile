@@ -9,6 +9,7 @@ pre-commit = "*"
 [packages]
 requests = "*"
 lxml = "*"
+brain-brew = "*"
 
 [requires]
 python_version = "3.8"

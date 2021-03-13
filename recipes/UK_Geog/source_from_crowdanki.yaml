@@ -1,0 +1,35 @@
+- build_parts:
+  - notes_from_crowd_anki:
+      source: &deck_name "build/United Kingdom Geography - Regions Counties and Cities"
+      part_id: uk geog notes
+      sort_order: [Location]
+
+  - note_models_from_crowd_anki:
+    - source: *deck_name
+      part_id: UK Geog
+
+  - headers_from_crowd_anki:
+    - source: *deck_name
+      part_id: default
+      save_to_file: src/headers/UK_Geog/default.yaml
+
+- generate_csvs:
+    notes: uk geog notes
+
+    note_model_mappings:
+    - note_models:
+        - UK Geog
+      columns_to_fields:
+        guid: guid
+        tags: tags
+        Location: Location
+        MacroLocation: MacroLocation
+        City: City
+        County: County
+        Region: Region
+        BoW: BoW
+      personal_fields: []
+
+    file_mappings:
+    - file: src/data/uk_geog.csv
+      note_model: UK Geog

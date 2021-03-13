@@ -2,20 +2,26 @@ body {
   margin: 0;
 }
 
-svg {
-	max-height: 98%;
-	max-width: 98%;
+.mobile svg {
+  shape-rendering: optimizeSpeed;
+  text-rendering: optimizeSpeed;
 }
 
-.grow-section {
+#center { 
   display: flex;
-  flex-flow: column;
-  height: 90vh;
+  align-items: center;
+  justify-content: center;
 }
 
-.grow-section .grow{
-	flex-grow: 1;
-	overflow: auto;
+#fitcontent {
+  display: inline-block;
+  position: relative;
+}
+
+[id="zoombox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .card {
@@ -54,12 +60,3 @@ svg {
 hr {
   margin: 1.5em 0;
 }
-
-@keyframes jump {
-    0% { transform: translate(0px, 2px); }
-    20% { transform: translate(0px, 2px); }
-    40% { transform: translate(0px, 2px); }
-    60% { transform: translate(0px, -2px); }
-    80% { transform: translate(0px, -2px); }
-    100% { transform: translate(0px, -2px); }
-  }

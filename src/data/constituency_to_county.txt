@@ -1,0 +1,650 @@
+Aldershot|Hampshire
+Aldridge-Brownhills|West Midlands
+Altrincham and Sale West|Greater Manchester
+Amber Valley|Derbyshire
+Arundel and South Downs|West Sussex
+Ashfield|Nottinghamshire
+Ashford|Kent
+Ashton-under-Lyne|Greater Manchester
+Aylesbury|Buckinghamshire
+Banbury|Oxfordshire
+Barking|London
+Barnsley Central|South Yorkshire
+Barnsley East|South Yorkshire
+Barrow and Furness|Cumbria
+Basildon and Billericay|Essex
+Basingstoke|Hampshire
+Bassetlaw|Nottinghamshire
+Bath|Somerset
+Batley and Spen|West Yorkshire
+Battersea|London
+Beaconsfield|Buckinghamshire
+Beckenham|London
+Bedford|Bedfordshire
+Bermondsey and Old Southwark|London
+Berwick-upon-Tweed|Northumberland
+Bethnal Green and Bow|London
+Beverley and Holderness|East Riding of Yorkshire
+Bexhill and Battle|East Sussex
+Bexleyheath and Crayford|London
+Birkenhead|Merseyside
+Birmingham, Edgbaston|West Midlands
+Birmingham, Erdington|West Midlands
+Birmingham, Hall Green|West Midlands
+Birmingham, Hodge Hill|West Midlands
+Birmingham, Ladywood|West Midlands
+Birmingham, Northfield|West Midlands
+Birmingham, Perry Barr|West Midlands
+Birmingham, Selly Oak|West Midlands
+Birmingham, Yardley|West Midlands
+Bishop Auckland|County Durham
+Blackburn|Lancashire
+Blackley and Broughton|Greater Manchester
+Blackpool North and Cleveleys|Lancashire
+Blackpool South|Lancashire
+Blaydon|Tyne and Wear
+Blyth Valley|Northumberland
+Bognor Regis and Littlehampton|West Sussex
+Bolsover|Derbyshire
+Bolton North East|Greater Manchester
+Bolton South East|Greater Manchester
+Bolton West|Greater Manchester
+Bootle|Merseyside
+Boston and Skegness|Lincolnshire
+Bosworth|Leicestershire
+Bournemouth East|Dorset
+Bournemouth West|Dorset
+Bracknell|Berkshire
+Bradford East|West Yorkshire
+Bradford South|West Yorkshire
+Bradford West|West Yorkshire
+Braintree|Essex
+Brent Central|London
+Brent North|London
+Brentford and Isleworth|London
+Brentwood and Ongar|Essex
+Bridgwater and West Somerset|Somerset
+Brigg and Goole|East Riding of Yorkshire;Lincolnshire
+Brighton, Kemptown|East Sussex
+Brighton, Pavilion|East Sussex
+Bristol East|Bristol
+Bristol North West|Bristol
+Bristol South|Bristol
+Bristol West|Bristol
+Broadland|Norfolk
+Bromley and Chislehurst|London
+Bromsgrove|Worcestershire
+Broxbourne|Hertfordshire
+Broxtowe|Nottinghamshire
+Buckingham|Buckinghamshire
+Burnley|Lancashire
+Burton|Staffordshire
+Bury North|Greater Manchester
+Bury South|Greater Manchester
+Bury St Edmunds|Suffolk
+Calder Valley|West Yorkshire
+Camberwell and Peckham|London
+Camborne and Redruth|Cornwall
+Cambridge|Cambridgeshire
+Cannock Chase|Staffordshire
+Canterbury|Kent
+Carlisle|Cumbria
+Carshalton and Wallington|London
+Castle Point|Essex
+Central Devon|Devon
+Central Suffolk and North Ipswich|Suffolk
+Charnwood|Leicestershire
+Chatham and Aylesford|Kent
+Cheadle|Greater Manchester
+Chelmsford|Essex
+Chelsea and Fulham|London
+Cheltenham|Gloucestershire
+Chesham and Amersham|Buckinghamshire
+Chesterfield|Derbyshire
+Chichester|West Sussex
+Chingford and Woodford Green|London
+Chippenham|Wiltshire
+Chipping Barnet|London
+Chorley|Lancashire
+Christchurch|Dorset
+Cities of London and Westminster|London
+City of Chester|Cheshire
+City of Durham|County Durham
+Clacton|Essex
+Cleethorpes|Lincolnshire
+Colchester|Essex
+Colne Valley|West Yorkshire
+Congleton|Cheshire
+Copeland|Cumbria
+Corby|Northamptonshire
+Coventry North East|West Midlands
+Coventry North West|West Midlands
+Coventry South|West Midlands
+Crawley|West Sussex
+Crewe and Nantwich|Cheshire
+Croydon Central|London
+Croydon North|London
+Croydon South|London
+Dagenham and Rainham|London
+Darlington|County Durham
+Dartford|Kent
+Daventry|Northamptonshire
+Denton and Reddish|Greater Manchester
+Derby North|Derbyshire
+Derby South|Derbyshire
+Derbyshire Dales|Derbyshire
+Devizes|Wiltshire
+Dewsbury|West Yorkshire
+Don Valley|South Yorkshire
+Doncaster Central|South Yorkshire
+Doncaster North|South Yorkshire
+Dover|Kent
+Dudley North|West Midlands
+Dudley South|West Midlands
+Dulwich and West Norwood|London
+Ealing Central and Acton|London
+Ealing North|London
+Ealing, Southall|London
+Easington|County Durham
+East Devon|Devon
+East Ham|London
+East Hampshire|Hampshire
+East Surrey|Surrey
+East Worthing and Shoreham|West Sussex
+East Yorkshire|East Riding of Yorkshire
+Eastbourne|East Sussex
+Eastleigh|Hampshire
+Eddisbury|Cheshire
+Edmonton|London
+Ellesmere Port and Neston|Cheshire
+Elmet and Rothwell|West Yorkshire
+Eltham|London
+Enfield North|London
+Enfield, Southgate|London
+Epping Forest|Essex
+Epsom and Ewell|Surrey
+Erewash|Derbyshire
+Erith and Thamesmead|London
+Esher and Walton|Surrey
+Exeter|Devon
+Fareham|Hampshire
+Faversham and Mid Kent|Kent
+Feltham and Heston|London
+Filton and Bradley Stoke|Gloucestershire
+Finchley and Golders Green|London
+Folkestone and Hythe|Kent
+Forest of Dean|Gloucestershire
+Fylde|Lancashire
+Gainsborough|Lincolnshire
+Garston and Halewood|Merseyside
+Gateshead|Tyne and Wear
+Gedling|Nottinghamshire
+Gillingham and Rainham|Kent
+Gloucester|Gloucestershire
+Gosport|Hampshire
+Grantham and Stamford|Lincolnshire
+Gravesham|Kent
+Great Grimsby|Lincolnshire
+Great Yarmouth|Norfolk
+Greenwich and Woolwich|London
+Guildford|Surrey
+Hackney North and Stoke Newington|London
+Hackney South and Shoreditch|London
+Halesowen and Rowley Regis|West Midlands
+Halifax|West Yorkshire
+Haltemprice and Howden|East Riding of Yorkshire
+Halton|Cheshire
+Hammersmith|London
+Hampstead and Kilburn|London
+Harborough|Leicestershire
+Harlow|Essex
+Harrogate and Knaresborough|North Yorkshire
+Harrow East|London
+Harrow West|London
+Hartlepool|County Durham
+Harwich and North Essex|Essex
+Hastings and Rye|East Sussex
+Havant|Hampshire
+Hayes and Harlington|London
+Hazel Grove|Greater Manchester
+Hemel Hempstead|Hertfordshire
+Hemsworth|West Yorkshire
+Hendon|London
+Henley|Oxfordshire
+Hereford and South Herefordshire|Herefordshire
+Hertford and Stortford|Hertfordshire
+Hertsmere|Hertfordshire
+Hexham|Northumberland
+Heywood and Middleton|Greater Manchester
+High Peak|Derbyshire
+Hitchin and Harpenden|Hertfordshire
+Holborn and St Pancras|London
+Hornchurch and Upminster|London
+Hornsey and Wood Green|London
+Horsham|West Sussex
+Houghton and Sunderland South|Tyne and Wear
+Hove|East Sussex
+Huddersfield|West Yorkshire
+Huntingdon|Cambridgeshire
+Hyndburn|Lancashire
+Ilford North|London
+Ilford South|London
+Ipswich|Suffolk
+Isle of Wight|Isle of Wight
+Islington North|London
+Islington South and Finsbury|London
+Jarrow|Tyne and Wear
+Keighley|West Yorkshire
+Kenilworth and Southam|Warwickshire
+Kensington|London
+Kettering|Northamptonshire
+Kingston and Surbiton|London
+Kingston upon Hull East|East Riding of Yorkshire
+Kingston upon Hull North|East Riding of Yorkshire
+Kingston upon Hull West and Hessle|East Riding of Yorkshire
+Kingswood|Gloucestershire
+Knowsley|Merseyside
+Lancaster and Fleetwood|Lancashire
+Leeds Central|West Yorkshire
+Leeds East|West Yorkshire
+Leeds North East|West Yorkshire
+Leeds North West|West Yorkshire
+Leeds West|West Yorkshire
+Leicester East|Leicestershire
+Leicester South|Leicestershire
+Leicester West|Leicestershire
+Leigh|Greater Manchester
+Lewes|East Sussex
+Lewisham, Deptford|London
+Lewisham East|London
+Lewisham West and Penge|London
+Leyton and Wanstead|London
+Lichfield|Staffordshire
+Lincoln|Lincolnshire
+Liverpool, Riverside|Merseyside
+Liverpool, Walton|Merseyside
+Liverpool, Wavertree|Merseyside
+Liverpool, West Derby|Merseyside
+Loughborough|Leicestershire
+Louth and Horncastle|Lincolnshire
+Ludlow|Shropshire
+Luton North|Bedfordshire
+Luton South|Bedfordshire
+Macclesfield|Cheshire
+Maidenhead|Berkshire
+Maidstone and The Weald|Kent
+Makerfield|Greater Manchester
+Maldon|Essex
+Manchester Central|Greater Manchester
+Manchester, Gorton|Greater Manchester
+Manchester, Withington|Greater Manchester
+Mansfield|Nottinghamshire
+Meon Valley|Hampshire
+Meriden|West Midlands
+Mid Bedfordshire|Bedfordshire
+Mid Derbyshire|Derbyshire
+Mid Dorset and North Poole|Dorset
+Mid Norfolk|Norfolk
+Mid Sussex|West Sussex
+Mid Worcestershire|Worcestershire
+Middlesbrough|North Yorkshire
+Middlesbrough South and East Cleveland|North Yorkshire
+Milton Keynes North|Buckinghamshire
+Milton Keynes South|Buckinghamshire
+Mitcham and Morden|London
+Mole Valley|Surrey
+Morecambe and Lunesdale|Lancashire
+Morley and Outwood|West Yorkshire
+New Forest East|Hampshire
+New Forest West|Hampshire
+Newark|Nottinghamshire
+Newbury|Berkshire
+Newcastle-under-Lyme|Staffordshire
+Newcastle upon Tyne Central|Tyne and Wear
+Newcastle upon Tyne East|Tyne and Wear
+Newcastle upon Tyne North|Tyne and Wear
+Newton Abbot|Devon
+Normanton, Pontefract and Castleford|West Yorkshire
+North Cornwall|Cornwall
+North Devon|Devon
+North Dorset|Dorset
+North Durham|County Durham
+North East Bedfordshire|Bedfordshire
+North East Cambridgeshire|Cambridgeshire
+North East Derbyshire|Derbyshire
+North East Hampshire|Hampshire
+North East Hertfordshire|Hertfordshire
+North East Somerset|Somerset
+North Herefordshire|Herefordshire
+North Norfolk|Norfolk
+North Shropshire|Shropshire
+North Somerset|Somerset
+North Swindon|Wiltshire
+North Thanet|Kent
+North Tyneside|Tyne and Wear
+North Warwickshire|Warwickshire
+North West Cambridgeshire|Cambridgeshire
+North West Durham|County Durham
+North West Hampshire|Hampshire
+North West Leicestershire|Leicestershire
+North West Norfolk|Norfolk
+North Wiltshire|Wiltshire
+Northampton North|Northamptonshire
+Northampton South|Northamptonshire
+Norwich North|Norfolk
+Norwich South|Norfolk
+Nottingham East|Nottinghamshire
+Nottingham North|Nottinghamshire
+Nottingham South|Nottinghamshire
+Nuneaton|Warwickshire
+Old Bexley and Sidcup|London
+Oldham East and Saddleworth|Greater Manchester
+Oldham West and Royton|Greater Manchester
+Orpington|London
+Oxford East|Oxfordshire
+Oxford West and Abingdon|Oxfordshire
+Pendle|Lancashire
+Penistone and Stocksbridge|South Yorkshire
+Penrith and The Border|Cumbria
+Peterborough|Cambridgeshire
+Plymouth, Moor View|Devon
+Plymouth, Sutton and Devonport|Devon
+Poole|Dorset
+Poplar and Limehouse|London
+Portsmouth North|Hampshire
+Portsmouth South|Hampshire
+Preston|Lancashire
+Pudsey|West Yorkshire
+Putney|London
+Rayleigh and Wickford|Essex
+Reading East|Berkshire
+Reading West|Berkshire
+Redcar|North Yorkshire
+Redditch|Worcestershire
+Reigate|Surrey
+Ribble Valley|Lancashire
+Richmond (Yorks)|North Yorkshire
+Richmond Park|London
+Rochdale|Greater Manchester
+Rochester and Strood|Kent
+Rochford and Southend East|Essex
+Romford|London
+Romsey and Southampton North|Hampshire
+Rossendale and Darwen|Lancashire
+Rother Valley|South Yorkshire
+Rotherham|South Yorkshire
+Rugby|Warwickshire
+Ruislip, Northwood and Pinner|London
+Runnymede and Weybridge|Surrey
+Rushcliffe|Nottinghamshire
+Rutland and Melton|Leicestershire;Rutland
+Saffron Walden|Essex
+Salford and Eccles|Greater Manchester
+Salisbury|Wiltshire
+Scarborough and Whitby|North Yorkshire
+Scunthorpe|Lincolnshire
+Sedgefield|County Durham
+Sefton Central|Merseyside
+Selby and Ainsty|North Yorkshire
+Sevenoaks|Kent
+Sheffield, Brightside and Hillsborough|South Yorkshire
+Sheffield Central|South Yorkshire
+Sheffield, Hallam|South Yorkshire
+Sheffield, Heeley|South Yorkshire
+Sheffield South East|South Yorkshire
+Sherwood|Nottinghamshire
+Shipley|West Yorkshire
+Shrewsbury and Atcham|Shropshire
+Sittingbourne and Sheppey|Kent
+Skipton and Ripon|North Yorkshire
+Sleaford and North Hykeham|Lincolnshire
+Slough|Berkshire
+Solihull|West Midlands
+Somerton and Frome|Somerset
+South Basildon and East Thurrock|Essex
+South Cambridgeshire|Cambridgeshire
+South Derbyshire|Derbyshire
+South Dorset|Dorset
+South East Cambridgeshire|Cambridgeshire
+South East Cornwall|Cornwall
+South Holland and The Deepings|Lincolnshire
+South Leicestershire|Leicestershire
+South Norfolk|Norfolk
+South Northamptonshire|Northamptonshire
+South Ribble|Lancashire
+South Shields|Tyne and Wear
+South Staffordshire|Staffordshire
+South Suffolk|Suffolk
+South Swindon|Wiltshire
+South Thanet|Kent
+South West Bedfordshire|Bedfordshire
+South West Devon|Devon
+South West Hertfordshire|Hertfordshire
+South West Norfolk|Norfolk
+South West Surrey|Surrey
+South West Wiltshire|Wiltshire
+Southampton, Itchen|Hampshire
+Southampton, Test|Hampshire
+Southend West|Essex
+Southport|Merseyside
+Spelthorne|Surrey
+St Albans|Hertfordshire
+St Austell and Newquay|Cornwall
+St Helens North|Merseyside
+St Helens South and Whiston|Merseyside
+St Ives|Cornwall
+Stafford|Staffordshire
+Staffordshire Moorlands|Staffordshire
+Stalybridge and Hyde|Greater Manchester
+Stevenage|Hertfordshire
+Stockport|Greater Manchester
+Stockton North|County Durham
+Stockton South|County Durham;North Yorkshire
+Stoke-on-Trent Central|Staffordshire
+Stoke-on-Trent North|Staffordshire
+Stoke-on-Trent South|Staffordshire
+Stone|Staffordshire
+Stourbridge|West Midlands
+Stratford-on-Avon|Warwickshire
+Streatham|London
+Stretford and Urmston|Greater Manchester
+Stroud|Gloucestershire
+Suffolk Coastal|Suffolk
+Sunderland Central|Tyne and Wear
+Surrey Heath|Surrey
+Sutton and Cheam|London
+Sutton Coldfield|West Midlands
+Tamworth|Staffordshire
+Tatton|Cheshire
+Taunton Deane|Somerset
+Telford|Shropshire
+Tewkesbury|Gloucestershire
+The Cotswolds|Gloucestershire
+The Wrekin|Shropshire
+Thirsk and Malton|North Yorkshire
+Thornbury and Yate|Gloucestershire
+Thurrock|Essex
+Tiverton and Honiton|Devon
+Tonbridge and Malling|Kent
+Tooting|London
+Torbay|Devon
+Torridge and West Devon|Devon
+Totnes|Devon
+Tottenham|London
+Truro and Falmouth|Cornwall
+Tunbridge Wells|Kent
+Twickenham|London
+Tynemouth|Tyne and Wear
+Uxbridge and South Ruislip|London
+Vauxhall|London
+Wakefield|West Yorkshire
+Wallasey|Merseyside
+Walsall North|West Midlands
+Walsall South|West Midlands
+Walthamstow|London
+Wansbeck|Northumberland
+Wantage|Oxfordshire
+Warley|West Midlands
+Warrington North|Cheshire
+Warrington South|Cheshire
+Warwick and Leamington|Warwickshire
+Washington and Sunderland West|Tyne and Wear
+Watford|Hertfordshire
+Waveney|Suffolk
+Wealden|East Sussex
+Weaver Vale|Cheshire
+Wellingborough|Northamptonshire
+Wells|Somerset
+Welwyn Hatfield|Hertfordshire
+Wentworth and Dearne|South Yorkshire
+West Bromwich East|West Midlands
+West Bromwich West|West Midlands
+West Dorset|Dorset
+West Ham|London
+West Lancashire|Lancashire
+West Suffolk|Suffolk
+West Worcestershire|Worcestershire
+Westminster North|London
+Westmorland and Lonsdale|Cumbria
+Weston-Super-Mare|Somerset
+Wigan|Greater Manchester
+Wimbledon|London
+Winchester|Hampshire
+Windsor|Berkshire
+Wirral South|Merseyside
+Wirral West|Merseyside
+Witham|Essex
+Witney|Oxfordshire
+Woking|Surrey
+Wokingham|Berkshire
+Wolverhampton North East|West Midlands
+Wolverhampton South East|West Midlands
+Wolverhampton South West|West Midlands
+Worcester|Worcestershire
+Workington|Cumbria
+Worsley and Eccles South|Greater Manchester
+Worthing West|West Sussex
+Wycombe|Buckinghamshire
+Wyre and Preston North|Lancashire
+Wyre Forest|Worcestershire
+Wythenshawe and Sale East|Greater Manchester
+Yeovil|Somerset
+York Central|North Yorkshire
+York Outer|North Yorkshire
+Aberdeen North|Aberdeen City
+Aberdeen South|Aberdeen City
+Airdrie and Shotts|North Lanarkshire
+Angus|Angus
+Argyll and Bute|Argyll and Bute
+Ayr, Carrick and Cumnock|East Ayrshire;South Ayrshire
+Banff and Buchan|Aberdeenshire
+Berwickshire, Roxburgh and Selkirk|Scottish Borders
+Caithness, Sutherland and Easter Ross|Highland
+Central Ayrshire|North Ayrshire;South Ayrshire
+Coatbridge, Chryston and Bellshill|North Lanarkshire
+Cumbernauld, Kilsyth and Kirkintilloch East|East Dunbartonshire;North Lanarkshire
+Dumfries and Galloway|Dumfries and Galloway
+Dumfriesshire, Clydesdale and Tweeddale|Dumfries and Galloway;Scottish Borders;South Lanarkshire
+Dundee East|Angus;Dundee City
+Dundee West|Angus;Dundee City
+Dunfermline and West Fife|Fife
+East Dunbartonshire|East Dunbartonshire
+East Kilbride, Strathaven and Lesmahagow|South Lanarkshire
+East Lothian|East Lothian
+East Renfrewshire|East Renfrewshire
+Edinburgh East|City of Edinburgh
+Edinburgh North and Leith|City of Edinburgh
+Edinburgh South|City of Edinburgh
+Edinburgh South West|City of Edinburgh
+Edinburgh West|City of Edinburgh
+Falkirk|Falkirk
+Glasgow Central|Glasgow City
+Glasgow East|Glasgow City
+Glasgow North|Glasgow City
+Glasgow North East|Glasgow City
+Glasgow North West|Glasgow City
+Glasgow South|Glasgow City
+Glasgow South West|Glasgow City
+Glenrothes|Fife
+Gordon|Aberdeenshire
+Inverclyde|Inverclyde
+Inverness, Nairn, Badenoch and Strathspey|Highland
+Kilmarnock and Loudoun|East Ayrshire
+Kirkcaldy and Cowdenbeath|Fife
+Lanark and Hamilton East|South Lanarkshire
+Linlithgow and East Falkirk|West Lothian;Falkirk
+Livingston|West Lothian
+Midlothian|Midlothian
+Moray|Moray
+Motherwell and Wishaw|North Lanarkshire
+Na h-Eileanan an Iar|Outer Hebrides
+North Ayrshire and Arran|North Ayrshire
+North East Fife|Fife
+Ochil and South Perthshire|Clackmannanshire;Perth and Kinross
+Orkney and Shetland|Orkney Islands;Shetland Islands
+Paisley and Renfrewshire North|Renfrewshire
+Paisley and Renfrewshire South|Renfrewshire
+Perth and North Perthshire|Perth and Kinross
+Ross, Skye and Lochaber|Highland
+Rutherglen and Hamilton West|South Lanarkshire
+Stirling|Stirling
+West Aberdeenshire and Kincardine|Aberdeenshire
+West Dunbartonshire|West Dunbartonshire
+Aberavon|Neath Port Talbot
+Aberconwy|Conwy
+Alyn and Deeside|Flintshire;Wrexham
+Arfon|Gwynedd
+Blaenau Gwent|Blaenau Gwent
+Brecon and Radnorshire|Powys
+Bridgend|Bridgend
+Caerphilly|Caerphilly;Newport
+Cardiff Central|Cardiff
+Cardiff North|Cardiff
+Cardiff South and Penarth|Cardiff
+Cardiff West|Cardiff
+Carmarthen East and Dinefwr|Carmarthenshire
+Carmarthen West and South Pembrokeshire|Carmarthenshire;Pembrokeshire
+Ceredigion|Ceredigion
+Clwyd South|Denbighshire;Wrexham
+Clwyd West|Conwy;Denbighshire
+Cynon Valley|Rhondda Cynon Taf
+Delyn|Conwy;Flintshire
+Dwyfor Meirionnydd|Gwynedd
+Gower|Swansea
+Islwyn|Caerphilly
+Llanelli|Carmarthenshire;Swansea
+Merthyr Tydfil and Rhymney|Caerphilly;Merthyr Tydfil
+Monmouth|Monmouthshire
+Montgomeryshire|Powys
+Neath|Neath Port Talbot
+Newport East|Newport
+Newport West|Newport
+Ogmore|Rhondda Cynon Taf
+Pontypridd|Rhondda Cynon Taf
+Preseli Pembrokeshire|Pembrokeshire
+Rhondda|Rhondda Cynon Taf
+Swansea East|Swansea
+Swansea West|Swansea
+Torfaen|Torfaen
+Vale of Clwyd|Denbighshire
+Vale of Glamorgan|Vale of Glamorgan
+Wrexham|Wrexham
+Ynys Môn|Isle of Anglesey
+Belfast East|Belfast;Lisburn and Castlereagh
+Belfast North|Belfast;Antrim and Newtownabbey
+Belfast South|Belfast;Lisburn and Castlereagh
+Belfast West|Belfast;Lisburn and Castlereagh
+East Antrim|Antrim and Newtownabbey;Causeway Coast and Glens;Mid and East Antrim
+East Londonderry|Causeway Coast and Glens;Derry City and Strabane
+Fermanagh and South Tyrone|Armagh City, Banbridge and Craigavon;Fermanagh and Omagh;Mid Ulster
+Foyle|Derry City and Strabane
+Lagan Valley|Armagh City, Banbridge and Craigavon;Lisburn and Castlereagh;Newry, Mourne and Down
+Mid Ulster|Mid Ulster
+Newry and Armagh|Armagh City, Banbridge and Craigavon;Newry, Mourne and Down
+North Antrim|Causeway Coast and Glens;Mid and East Antrim
+North Down|Ards and North Down
+South Antrim|Antrim and Newtownabbey;Lisburn and Castlereagh
+South Down|Armagh City, Banbridge and Craigavon;Newry, Mourne and Down
+Strangford|Ards and North Down;Lisburn and Castlereagh;Newry, Mourne and Down
+Upper Bann|Armagh City, Banbridge and Craigavon
+West Tyrone|Derry City and Strabane;Fermanagh and Omagh

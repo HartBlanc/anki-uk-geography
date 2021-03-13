@@ -1,0 +1,58 @@
+
+- generate_guids_in_csv:
+    source: src/data/uk_constituencies.csv
+    columns: [ guid ]
+
+- build_parts:
+  - note_model_templates_from_html:
+      - part_id: Map - Constituency
+        html_file: src/note_models/UK_Constituencies/templates/Map - Constituency.html
+
+  - note_model_from_html_parts:
+      part_id: UK Geog Constituencies
+      model_name: UK Geog Constituencies
+      model_id: e79c0b94-2e8e-4899-bb89-25f75f48af24
+      css_file: src/note_models/UK_Constituencies/style.css
+      fields:
+        - name: Constituency
+        - name: Counties
+      templates:
+        - Map - Constituency
+
+  - headers_from_yaml_part:
+      part_id: default header
+      file: src/headers/UK_Constituencies/default.yaml
+      override:
+        deck_description_html_file: src/headers/UK_Constituencies/desc.html
+
+  - notes_from_csvs:
+      part_id: uk_constituencies
+
+      note_model_mappings:
+        - note_models:
+            - UK Geog Constituencies
+          columns_to_fields:
+            guid: guid
+            tags: tags
+
+            Constituency: Constituency
+            Counties: Counties
+
+          personal_fields: [ ]
+
+      file_mappings:
+        - file: src/data/uk_constituencies.csv
+          note_model: UK Geog Constituencies
+
+- generate_crowd_anki:
+    headers: default header
+
+    note_models:
+      parts:
+        - part_id: UK Geog Constituencies
+
+    folder: build/United Kingdom Geography - Constituencies
+
+    notes:
+      part_id: uk_constituencies
+      sort_order: [ guid ]

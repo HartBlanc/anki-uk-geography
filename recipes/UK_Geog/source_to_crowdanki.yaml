@@ -1,0 +1,94 @@
+
+- generate_guids_in_csv:
+    source: src/data/uk_geog.csv
+    columns: [ guid ]
+
+- build_parts:
+  - note_model_templates_from_html:
+      - part_id: BoW - Map
+        html_file: src/note_models/UK_Geog/templates/Bow - Map.html
+      - part_id: City - County
+        html_file: src/note_models/UK_Geog/templates/City - County.html
+      - part_id: City - Map
+        html_file: src/note_models/UK_Geog/templates/City - Map.html
+      - part_id: County - Map
+        html_file: src/note_models/UK_Geog/templates/County - Map.html
+      - part_id: County - Region
+        html_file: src/note_models/UK_Geog/templates/County - Region.html
+      - part_id: Map - BoW
+        html_file: src/note_models/UK_Geog/templates/Map - BoW.html
+      - part_id: Map - City
+        html_file: src/note_models/UK_Geog/templates/Map - City.html
+      - part_id: Map - County
+        html_file: src/note_models/UK_Geog/templates/Map - County.html
+      - part_id: Map - Region
+        html_file: src/note_models/UK_Geog/templates/Map - Region.html
+      - part_id: Region - Map
+        html_file: src/note_models/UK_Geog/templates/Region - Map.html
+
+  - note_model_from_html_parts:
+      part_id: UK Geog
+      model_name: UK Geog
+      model_id: 7bdd71a0-a5fe-47bf-a416-a5efda5c79c7
+      css_file: src/note_models/UK_Geog/style.css
+      fields:
+        - name: Location
+        - name: MacroLocation
+        - name: City
+        - name: County
+        - name: Region
+        - name: BoW
+      templates:
+        - BoW - Map
+        - City - County
+        - City - Map
+        - County - Map
+        - County - Region
+        - Map - BoW
+        - Map - City
+        - Map - County
+        - Map - Region
+        - Region - Map
+
+  - headers_from_yaml_part:
+      part_id: default header
+      file: src/headers/UK_Geog/default.yaml
+      override:
+        deck_description_html_file: src/headers/UK_Geog/desc.html
+
+  - notes_from_csvs:
+      part_id: uk_geog
+
+      note_model_mappings:
+        - note_models:
+            - UK Geog
+          columns_to_fields:
+            guid: guid
+            tags: tags
+
+            Location: Location
+            MacroLocation: MacroLocation
+            City: City
+            County: County
+            Region: Region
+            BoW: BoW
+
+          personal_fields: [ ]
+
+      file_mappings:
+        - file: src/data/uk_geog.csv
+          note_model: UK Geog
+
+
+- generate_crowd_anki:
+    headers: default header
+
+    note_models:
+      parts:
+        - part_id: UK Geog
+
+    folder: build/United Kingdom Geography - Regions Counties and Cities
+
+    notes:
+      part_id: uk_geog
+      sort_order: [guid]
