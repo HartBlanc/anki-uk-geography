@@ -1,5 +1,6 @@
 """ methods associtated with generating the anki-dm data.csv file """
 
+import argparse
 import csv
 from pathlib import Path
 from typing import Iterator, Optional, Sequence, TypeVar
@@ -9,7 +10,7 @@ from lxml import etree
 region_country = {
     "Scotland": "Scotland",
     "Wales": "Wales",
-    "Northern Ireland": "NorthernIreland",
+    "Northern Ireland": "NorthernIreland",  # tags are delimited by spaces
     "South East": "England",
     "London": "England",
     "South West": "England",
@@ -29,40 +30,29 @@ def pad_none(items: Sequence[A]) -> Iterator[Optional[A]]:
 
     count = 0
     while True:
-        if items:
+        if count < len(items):
             yield items[count]
             count += 1
         else:
             yield None
 
 
-def build_deck_csv(anki_dm_src_path: Path, guids: Optional[Sequence[str]] = None) -> None:
-    """
-    constructs the data.csv file for anki-dm which is ultimately used to
-    generate the crowdanki json. Optionally retains old guids to ensure that
-    Anki does
-    not lose track of progress.
+def build_deck_csv(
+    uk_counties_path: Path,
+    cities_csv_path: Path,
+    outfile_path: Path,
+    guids: Optional[Sequence[Optional[str]]] = None,
+) -> None:
 
-    :param anki_dm_src_path: The path to the anki-dm src folder, which is used
-                             by the anki-dm build command to generate the crowdanki
-                             json.
-    :param guids: A sequence of the globally unique IDs to use for each card, if
-                  not included, guids can be set automatically by calling
-                  anki-dm reindex
-                  later, which will generate a new set of random guids.
-    """
-
-    COUNTY_MAP = Path("uk_counties.svg")
-
-    with (anki_dm_src_path / "data.csv").open(mode="w") as outfile:
+    with outfile_path.open(mode="w") as outfile:
         fieldnames = [
             "guid",
-            "Location",
-            "MacroLocation",
-            "City",
-            "County",
-            "Region",
-            "BoW",
+            "location",
+            "macrolocation",
+            "city",
+            "county",
+            "region",
+            "bow",
             "tags",
         ]
         writer = csv.DictWriter(outfile, fieldnames=fieldnames)
@@ -71,7 +61,7 @@ def build_deck_csv(anki_dm_src_path: Path, guids: Optional[Sequence[str]] = None
         padded_guids = pad_none(guids) if guids else pad_none([])
 
         # Regions
-        with COUNTY_MAP.open(mode="rb") as svg_file:
+        with uk_counties_path.open(mode="rb") as svg_file:
             svg_string = svg_file.read()
 
         svg_root = etree.fromstring(svg_string)
@@ -84,20 +74,14 @@ def build_deck_csv(anki_dm_src_path: Path, guids: Optional[Sequence[str]] = None
             writer.writerow(
                 {
                     "guid": next(padded_guids),
-                    "Location": region_name,
-                    "Region": region_name,
+                    "location": region_name,
+                    "region": region_name,
                     "tags": f"Region {region_country[region_name]}",
                 }
             )
 
         # Counties
-        with COUNTY_MAP.open(mode="rb") as svg_file:
-            svg_string = svg_file.read()
-
-        svg_root = etree.fromstring(svg_string)
-        region_elems = list(svg_root.xpath('//*[@id="Regions"]/*'))
         county_country = dict()
-
         for region_elem in region_elems:
             region_name = region_elem.attrib["id"]
             for county_elem in region_elem.xpath("./*"):
@@ -108,9 +92,9 @@ def build_deck_csv(anki_dm_src_path: Path, guids: Optional[Sequence[str]] = None
                 writer.writerow(
                     {
                         "guid": next(padded_guids),
-                        "Location": county_name,
-                        "MacroLocation": region_name,
-                        "County": county_name,
+                        "location": county_name,
+                        "macrolocation": region_name,
+                        "county": county_name,
                         "tags": f"County {county_country[county_name]}",
                     }
                 )
@@ -121,12 +105,12 @@ def build_deck_csv(anki_dm_src_path: Path, guids: Optional[Sequence[str]] = None
         for bow_elem in bow_elems:
             bow_name = bow_elem.attrib["id"]
             writer.writerow(
-                {"guid": next(padded_guids), "Location": bow_name, "BoW": bow_name, "tags": "BoW"}
+                {"guid": next(padded_guids), "location": bow_name, "bow": bow_name, "tags": "BoW"}
             )
 
         # Cities
-        with open("cities.csv", "r") as csvfile:
-            city_county = list(csv.reader(csvfile))[1:]  # Skip Header Row
+        with cities_csv_path.open(mode="r") as csvfile:
+            city_county = list(csv.reader(csvfile))[1:]  # Skip header row
 
         for (city_name, county_name) in city_county:
             if "/" in county_name:
@@ -138,9 +122,9 @@ def build_deck_csv(anki_dm_src_path: Path, guids: Optional[Sequence[str]] = None
             writer.writerow(
                 {
                     "guid": next(padded_guids),
-                    "Location": city_name,
-                    "MacroLocation": county_name,
-                    "City": city_name,
+                    "location": city_name,
+                    "macrolocation": county_name,
+                    "city": city_name,
                     "tags": f"City {country}",
                 }
             )
@@ -148,11 +132,49 @@ def build_deck_csv(anki_dm_src_path: Path, guids: Optional[Sequence[str]] = None
 
 if __name__ == "__main__":
 
-    SRC_FOLDER = Path("anki_dm", "src")
+    parser = argparse.ArgumentParser(
+        description="A utility for extracting data from SVG files into the brain brew CSV format",
+    )
+    parser.add_argument(
+        "uk_counties",
+        type=Path,
+        help=(
+            "The path to the SVG file containing all of the regions, counties, cities, and bodies "
+            "of water"
+        ),
+    )
+    parser.add_argument(
+        "cities_csv",
+        type=Path,
+        help=(
+            "The path to a CSV file which contains a full list of cities in the UK and their "
+            "associated counties"
+        ),
+    )
+    parser.add_argument(
+        "outfile",
+        type=Path,
+        help=(
+            "The path to write the output CSV to. This is typically the input CSV for brain brew."
+        ),
+    )
+    parser.add_argument(
+        "--guids",
+        action="store_true",
+        help=(
+            "A boolean flag indicating whether to re-use the GUIDs defined in outfile. "
+            "If omitted, the guid column will be left blank and brain brew will generate new ones."
+        ),
+    )
 
-    with (SRC_FOLDER / "data.csv").open(mode="r") as curr_datafile:
-        reader = csv.DictReader(curr_datafile)
-        curr_guids = [row["guid"] for row in reader]
+    curr_guids: Optional[Sequence[Optional[str]]]
 
-    build_deck_csv(SRC_FOLDER, curr_guids)
-    # build_deck_csv(SRC_FOLDER)
+    args = parser.parse_args()
+    if args.guids:
+        with args.outfile.open(mode="r") as curr_datafile:
+            reader = csv.DictReader(curr_datafile)
+            curr_guids = [row["guid"] for row in reader]
+    else:
+        curr_guids = None
+
+    build_deck_csv(args.uk_counties, args.cities_csv, args.outfile, curr_guids)

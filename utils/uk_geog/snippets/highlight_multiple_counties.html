@@ -1,0 +1,8 @@
+<script>
+  selectedCountiesNames = "{{MacroLocation}}".split(" / ")
+
+  for (countyName of selectedCountiesNames) {
+    county = document.getElementById(countyName)
+    county.style.fill = "#2ECC40"
+  }
+</script>
