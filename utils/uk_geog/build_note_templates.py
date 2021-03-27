@@ -106,7 +106,8 @@ if __name__ == "__main__":
         for t_path in args.template_dir.iterdir()
         if t_path.suffixes in ([".template", ".htm"], [".template", ".html"])
     ]
-    file_references = set()  # type: set[str]
+
+    file_references: set[str] = set()
     for template in templates:
         file_references |= template.placeholders.keys()
 
