@@ -22,8 +22,8 @@ This repo contains code and resources for constructing the data.csv file which i
 used by brain brew to construct a crowdanki JSON file. It also contains the brain brew
 configuration. The crowdanki add-on can then be used to import the deck to anki.
 
-Here's a diagram explaining the high level process of how to build the deck from source:
-![](img/UK_Geog_Data_Flow.svg)
+Here's a diagram explaining the high level process of how the deck is built using the contents of this repo.
+![](img/uk_geog_build_process.svg)
 
 ## SVG IDs and anki templates
 So how does Anki know which region to highlight on each card? and which colour to
