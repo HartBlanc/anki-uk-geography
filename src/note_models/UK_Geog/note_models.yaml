@@ -1,0 +1,32 @@
+name: UK Geog
+id: 057a8d66-bc4e-11e9-9822-d8cb8ac9abf0
+css_file: src/note_models/UK_Geog/style.css
+fields:
+  - name: Location
+  - name: MacroLocation
+  - name: City
+  - name: County
+  - name: Region
+  - name: BoW
+templates:
+  - name: BoW - Map
+    html_file: src/note_models/UK_Geog/templates/Bow - Map.html
+  - name: City - County
+    html_file: src/note_models/UK_Geog/templates/City - County.html
+  - name: City - Map
+    html_file: src/note_models/UK_Geog/templates/City - Map.html
+  - name: County - Map
+    html_file: src/note_models/UK_Geog/templates/County - Map.html
+  - name: County - Region
+    html_file: src/note_models/UK_Geog/templates/County - Region.html
+  - name: Map - BoW
+    html_file: src/note_models/UK_Geog/templates/Map - BoW.html
+  - name: Map - City
+    html_file: src/note_models/UK_Geog/templates/Map - City.html
+  - name: Map - County
+    html_file: src/note_models/UK_Geog/templates/Map - County.html
+  - name: Map - Region
+    html_file: src/note_models/UK_Geog/templates/Map - Region.html
+  - name: Region - Map
+    html_file: src/note_models/UK_Geog/templates/Region - Map.html
+

@@ -4,52 +4,10 @@
     columns: [ guid ]
 
 - build_parts:
-  - note_model_templates_from_html:
-      - part_id: BoW - Map
-        html_file: src/note_models/UK_Geog/templates/Bow - Map.html
-      - part_id: City - County
-        html_file: src/note_models/UK_Geog/templates/City - County.html
-      - part_id: City - Map
-        html_file: src/note_models/UK_Geog/templates/City - Map.html
-      - part_id: County - Map
-        html_file: src/note_models/UK_Geog/templates/County - Map.html
-      - part_id: County - Region
-        html_file: src/note_models/UK_Geog/templates/County - Region.html
-      - part_id: Map - BoW
-        html_file: src/note_models/UK_Geog/templates/Map - BoW.html
-      - part_id: Map - City
-        html_file: src/note_models/UK_Geog/templates/Map - City.html
-      - part_id: Map - County
-        html_file: src/note_models/UK_Geog/templates/Map - County.html
-      - part_id: Map - Region
-        html_file: src/note_models/UK_Geog/templates/Map - Region.html
-      - part_id: Region - Map
-        html_file: src/note_models/UK_Geog/templates/Region - Map.html
-
-  - note_model_from_html_parts:
+  - note_model_from_yaml_part:
       part_id: UK Geog
-      model_name: UK Geog
-      model_id: 7bdd71a0-a5fe-47bf-a416-a5efda5c79c7
-      css_file: src/note_models/UK_Geog/style.css
-      fields:
-        - name: Location
-        - name: MacroLocation
-        - name: City
-        - name: County
-        - name: Region
-        - name: BoW
-      templates:
-        - BoW - Map
-        - City - County
-        - City - Map
-        - County - Map
-        - County - Region
-        - Map - BoW
-        - Map - City
-        - Map - County
-        - Map - Region
-        - Region - Map
-
+      file: src/note_models/UK_Geog/note_models.yaml
+  
   - headers_from_yaml_part:
       part_id: default header
       file: src/headers/UK_Geog/default.yaml
