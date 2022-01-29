@@ -79,11 +79,11 @@ build/counties.topojson: build/roi/* build/england_wales_counties/* build/roi/* 
 		-clean \
 		-o build/counties.topojson format=topojson
 
-build/counties.svg: build/counties.topojson build_svg_from_json.js
-	node build_svg_from_json.js build/counties.topojson build/counties.svg
+build/counties.svg: build/counties.topojson counties_svg_json.js
+	node counties_svg_json.js build/counties.topojson build/counties.svg
 
-build/counties.min.svg: build/counties.svg ../svgo.config.js
-	svgo --config=../svgo.config.js build/counties.svg -o build/counties.min.svg
+build/counties.min.svg: build/counties.svg svgo.config.js
+	svgo --config=svgo.config.js build/counties.svg -o build/counties.min.svg
 
 clean:
 	find build -not -name '*.shp.zip' -delete
