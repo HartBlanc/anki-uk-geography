@@ -1,14 +1,16 @@
-all: build/counties.min.svg
+all: build/counties.min.svg build/regions.min.svg
 
 build/gb_boundaries.shp.zip:
 	mkdir -p build
 	curl -L 'https://api.os.uk/downloads/v1/products/BoundaryLine/downloads?area=GB&format=ESRI%C2%AE+Shapefile&redirect' -H 'Cookie: CookieControl={"necessaryCookies":["TS01*","omse-*","AMP_TOKEN"]' -o build/gb_boundaries.shp.zip
+	unzip -Z1 build/gb_boundaries.shp.zip | \
+		grep -v '\(Data/Supplementary_Country/\|Data/Supplementary_Ceremonial/\)' | \
+		xargs -I '{}' zip -d build/gb_boundaries.shp.zip "{}"
 
 build/gb_boundaries/Data/Supplementary_Country/* build/gb_boundaries/Data/Supplementary_Ceremonial/*: build/gb_boundaries.shp.zip
 	mkdir -p build/gb_boundaries
-	unzip -o build/gb_boundaries.shp.zip "Data/Supplementary_Ceremonial/*" -d "build/gb_boundaries"
+	unzip -o build/gb_boundaries.shp.zip -d "build/gb_boundaries"
 	touch build/gb_boundaries/Data/Supplementary_Ceremonial/*
-	unzip -o build/gb_boundaries.shp.zip "Data/Supplementary_Country/*" -d "build/gb_boundaries"
 	touch build/gb_boundaries/Data/Supplementary_Country/*
 
 
@@ -77,6 +79,7 @@ build/counties.topojson: build/roi/* build/england_wales_counties/* build/roi/* 
 			build/scotland_council_areas/*.shp \
 			combine-files \
 		-clean \
+		-simplify 0.3% \
 		-o build/counties.topojson format=topojson
 
 build/counties.svg: build/counties.topojson counties_svg_json.js
@@ -84,6 +87,20 @@ build/counties.svg: build/counties.topojson counties_svg_json.js
 
 build/counties.min.svg: build/counties.svg svgo.config.js
 	svgo --config=svgo.config.js build/counties.svg -o build/counties.min.svg
+
+build/regions_epsg_27700.geojson: build/nuts_boundaries/*
+	mapshaper \
+		build/nuts_boundaries/*.shp \
+		-filter 'NUTS_ID == "IE0" || ( NUTS_ID.startsWith("UK") && LEVL_CODE == 1 )' \
+		-proj EPSG:27700 \
+		-clean \
+		-o build/regions_epsg_27700.geojson format=geojson
+
+build/regions.svg: build/regions_epsg_27700.geojson regions_svg_json.js
+	node regions_svg_json.js build/regions_epsg_27700.geojson build/regions.svg
+
+build/regions.min.svg: build/regions.svg svgo.config.js
+	svgo --config=svgo.config.js build/regions.svg -o build/regions.min.svg
 
 clean:
 	find build -not -name '*.shp.zip' -delete
