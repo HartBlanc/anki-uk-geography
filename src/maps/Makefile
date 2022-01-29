@@ -122,7 +122,8 @@ build/gb_cities.csv:
 	unzip build/gb_cities.csv.zip -d build/gb_cities
 	rm build/gb_cities.csv.zip
 
-	cut -d ',' -f 3,4,5,6,8,9,10 build/gb_cities/Data/* | grep ,City, > build/gb_cities.csv
+	cut -d ',' -f 3,4,5,6,8,9,10 build/gb_cities/Doc/OS_Open_Names_Header.csv > build/gb_cities.csv 
+	cut -d ',' -f 3,4,5,6,8,9,10 build/gb_cities/Data/* | grep ,City, >> build/gb_cities.csv
 	rm -r build/gb_cities
 
 clean:
