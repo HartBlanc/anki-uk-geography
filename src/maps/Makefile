@@ -1,4 +1,4 @@
-all: build/counties.min.svg build/regions.min.svg build/gb_cities.csv
+all: build/counties.min.svg build/regions.min.svg build/gb_cities.topojson
 
 build/gb_boundaries.shp.zip:
 	mkdir -p build
@@ -125,6 +125,15 @@ build/gb_cities.csv:
 	cut -d ',' -f 3,4,5,6,8,9,10 build/gb_cities/Doc/OS_Open_Names_Header.csv > build/gb_cities.csv 
 	cut -d ',' -f 3,4,5,6,8,9,10 build/gb_cities/Data/* | grep ,City, >> build/gb_cities.csv
 	rm -r build/gb_cities
+
+build/gb_cities.topojson: build/gb_cities.csv
+	mapshaper build/gb_cities.csv -points x=GEOMETRY_X y=GEOMETRY_Y -o tmp.topojson format=topojson
+
+	mapshaper \
+		-i tmp.topojson build/counties.topojson combine-files \
+		-o build/gb_cities.topojson force
+
+	rm tmp.topojson
 
 clean:
 	find build -not \( -name '*.shp.zip' -o -name '*.csv' \) -delete
