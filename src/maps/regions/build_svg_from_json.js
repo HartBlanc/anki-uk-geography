@@ -5,7 +5,7 @@ const width = 500,
     height = 700;
 
 // Load in GeoJSON
-const rawdata = fs.readFileSync('regions_epsg_27700.geojson');
+const rawdata = fs.readFileSync(process.argv[2]);
 const regions = JSON.parse(rawdata);
 
 const d3n = new D3Node();
@@ -51,5 +51,5 @@ regionsGroup.selectAll('path')
     return feature.properties.NAME_LATN;
   });
 
-fs.writeFileSync('out.svg', d3n.svgString());
+fs.writeFileSync(process.argv[3], d3n.svgString());
 
