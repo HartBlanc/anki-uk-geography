@@ -1,8 +1,12 @@
-all: build/counties.min.svg build/regions.min.svg
+all: build/counties.min.svg build/regions.min.svg build/gb_cities.csv
 
 build/gb_boundaries.shp.zip:
 	mkdir -p build
-	curl -L 'https://api.os.uk/downloads/v1/products/BoundaryLine/downloads?area=GB&format=ESRI%C2%AE+Shapefile&redirect' -H 'Cookie: CookieControl={"necessaryCookies":["TS01*","omse-*","AMP_TOKEN"]' -o build/gb_boundaries.shp.zip
+
+	curl -L \
+		'https://api.os.uk/downloads/v1/products/BoundaryLine/downloads?area=GB&format=ESRI%C2%AE+Shapefile&redirect' \
+		-o build/gb_boundaries.shp.zip
+
 	unzip -Z1 build/gb_boundaries.shp.zip | \
 		grep -v '\(Data/Supplementary_Country/\|Data/Supplementary_Ceremonial/\)' | \
 		xargs -I '{}' zip -d build/gb_boundaries.shp.zip "{}"
@@ -32,7 +36,9 @@ build/england_wales_counties/*: build/gb_boundaries/Data/Supplementary_Ceremonia
 
 build/n_ire_counties.shp.zip:
 	mkdir -p build
-	curl 'https://osni-spatialni.opendata.arcgis.com/datasets/spatialni::osni-open-data-largescale-boundaries-county-boundaries-.zip?outSR=%7B%22latestWkid%22%3A29902%2C%22wkid%22%3A29900%7D' -o build/n_ire_counties.shp.zip
+	curl \
+		'https://osni-spatialni.opendata.arcgis.com/datasets/spatialni::osni-open-data-largescale-boundaries-county-boundaries-.zip?outSR=%7B%22latestWkid%22%3A29902%2C%22wkid%22%3A29900%7D' \
+		-o build/n_ire_counties.shp.zip
 
 build/n_ire_counties/*: build/n_ire_counties.shp.zip
 	mkdir -p build/n_ire_counties
@@ -46,7 +52,9 @@ build/n_ire_counties/*: build/n_ire_counties.shp.zip
 
 build/scotland_council_areas.shp.zip:
 	mkdir -p build
-	curl 'https://geo.spatialhub.scot/geoserver/sh_las/wfs?authkey=b85aa063-d598-4582-8e45-e7e6048718fc&request=GetFeature&service=WFS&version=1.1.0&typeName=pub_las&outputFormat=SHAPE-ZIP' -o build/scotland_council_areas.shp.zip
+	curl \
+		'https://geo.spatialhub.scot/geoserver/sh_las/wfs?authkey=b85aa063-d598-4582-8e45-e7e6048718fc&request=GetFeature&service=WFS&version=1.1.0&typeName=pub_las&outputFormat=SHAPE-ZIP' \
+		-o build/scotland_council_areas.shp.zip
 
 build/scotland_council_areas/*: build/scotland_council_areas.shp.zip
 	mkdir -p build/scotland_council_areas
@@ -55,7 +63,9 @@ build/scotland_council_areas/*: build/scotland_council_areas.shp.zip
 
 build/nuts_boundaries.shp.zip:
 	mkdir -p build
-	curl 'https://gisco-services.ec.europa.eu/distribution/v2/nuts/shp/NUTS_RG_03M_2021_3035.shp.zip' -o build/nuts_boundaries.shp.zip 
+	curl \
+		'https://gisco-services.ec.europa.eu/distribution/v2/nuts/shp/NUTS_RG_03M_2021_3035.shp.zip' \
+		-o build/nuts_boundaries.shp.zip 
 
 build/nuts_boundaries/*: build/nuts_boundaries.shp.zip
 	mkdir -p build/nuts_boundaries
@@ -102,5 +112,18 @@ build/regions.svg: build/regions_epsg_27700.geojson regions_svg_json.js
 build/regions.min.svg: build/regions.svg svgo.config.js
 	svgo --config=svgo.config.js build/regions.svg -o build/regions.min.svg
 
+build/gb_cities.csv:
+	mkdir -p build/gb_cities
+
+	curl -L \
+		'https://api.os.uk/downloads/v1/products/OpenNames/downloads?area=GB&format=CSV&redirect=' \
+		-o build/gb_cities.csv.zip
+	
+	unzip build/gb_cities.csv.zip -d build/gb_cities
+	rm build/gb_cities.csv.zip
+
+	cut -d ',' -f 3,4,5,6,8,9,10 build/gb_cities/Data/* | grep ,City, > build/gb_cities.csv
+	rm -r build/gb_cities
+
 clean:
-	find build -not -name '*.shp.zip' -delete
+	find build -not \( -name '*.shp.zip' -o -name '*.csv' \) -delete
