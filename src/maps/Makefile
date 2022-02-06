@@ -2,6 +2,12 @@ all: build/counties.min.svg build/regions.min.svg build/cities.min.svg
 
 # TODO: City formatting for City-Counties
 # TODO: Body-of-Water maps
+# TODO: Resolve yorkshire region / county mismatch
+# TODO: Commonise counties js
+# TODO: Include mapshaper in project node_modules
+# TODO: Include SVGO in project node_moudles
+# TODO: requires node, jq, zip, unzip (versions)
+# TODO: Filter out london from cities
 
 build/gb_boundaries.shp.zip:
 	mkdir -p build
