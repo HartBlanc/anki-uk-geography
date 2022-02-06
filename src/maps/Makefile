@@ -115,16 +115,16 @@ build/counties.svg: build/counties.topojson counties_svg_json.js
 build/counties.min.svg: build/counties.svg svgo.config.js
 	svgo --config=svgo.config.js build/counties.svg -o build/counties.min.svg
 
-build/regions_epsg_27700.geojson: build/nuts_boundaries/*
+build/regions.topojson: build/nuts_boundaries/*
 	mapshaper \
 		-i build/nuts_boundaries/*.shp \
 		-filter 'NUTS_ID == "IE0" || ( NUTS_ID.startsWith("UK") && LEVL_CODE == 1 )' \
 		-proj EPSG:27700 \
 		-clean \
-		-o build/regions_epsg_27700.geojson format=geojson
+		-o build/regions.topojson format=topojson
 
-build/regions.svg: build/regions_epsg_27700.geojson regions_svg_json.js
-	node regions_svg_json.js build/regions_epsg_27700.geojson build/regions.svg
+build/regions.svg: build/regions.topojson regions_svg_json.js
+	node regions_svg_json.js build/regions.topojson build/regions.svg
 
 build/regions.min.svg: build/regions.svg svgo.config.js
 	svgo --config=svgo.config.js build/regions.svg -o build/regions.min.svg

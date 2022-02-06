@@ -1,19 +1,22 @@
 const D3Node = require("d3-node");
 const fs = require("fs");
+const topojson = require("topojson-client")
 
 const width = 500,
     height = 700;
 
 // Load in GeoJSON
 const rawdata = fs.readFileSync(process.argv[2]);
-const regions = JSON.parse(rawdata);
+const topoj = JSON.parse(rawdata);
 
 const d3n = new D3Node();
 const d3 = d3n.d3;
 
+const featureCollection = topojson.feature(topoj, topoj.objects["NUTS_RG_03M_2021_3035"])
+
 // We don't need a projection - as the geojson is pre-projected
 // we just used one to fit the SVG to the required width and height
-let fitSize = d3.geoIdentity().reflectY(true).fitSize([width, height], regions);
+let fitSize = d3.geoIdentity().reflectY(true).fitSize([width, height], featureCollection);
 let geoGenerator = d3.geoPath().projection(fitSize);
 
 const svg = d3n.createSVG(width, height)
@@ -26,7 +29,7 @@ const svg = d3n.createSVG(width, height)
 // process Ireland and the UK seperately...
 // Appending a path element for each feature in the GeoJSON FeatureCollection's features array
 svg.selectAll('path')
-  .data(regions.features)
+  .data(featureCollection.features)
   .enter()
   .filter(function(feature) { return feature.properties.NAME_LATN == "Ireland" })
   .append('path')
@@ -42,7 +45,7 @@ const regionsGroup = svg.append('g')
     .attr("stroke", "#777");
 
 regionsGroup.selectAll('path')
-  .data(regions.features)
+  .data(featureCollection.features)
   .enter()
   .filter(function(feature) { return feature.properties.NAME_LATN != "Ireland" })
   .append('path')
