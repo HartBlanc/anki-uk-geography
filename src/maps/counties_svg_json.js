@@ -56,22 +56,57 @@ let countyObjects = [
     "pub_las",
 ]
 
+let cityIDs = [
+    "Bristol",
+    "City and County of the City of London",
+    "Dundee City",
+    "Aberdeen City",
+    "City of Edinburgh",
+    "Glasgow City",
+]
+
+function getID(countyObject, feature) {
+  switch(countyObject) {
+    case "pub_las":
+      return feature.properties.local_auth;
+    case "england_wales_counties":
+      return feature.properties.NAME;
+    default:
+      return feature.properties.CountyName;
+  }
+}
+
 countyObjects.forEach(function(countyObject, index, array) {
+
     countiesGroup.append('g').selectAll('path')
       .data(topojson.feature(counties, counties.objects[countyObject]).features)
       .enter()
       .append('path')
       .attr('d', geoGenerator)
-      .attr('id', function(feature) {
-          switch(countyObject) {
-            case "pub_las":
-              return feature.properties.local_auth;
-            case "england_wales_counties":
-              return feature.properties.NAME;
-            default:
-              return feature.properties.CountyName;
-          }
-      });  
+      .filter((feature) => !cityIDs.includes(getID(countyObject, feature)))
+      .attr('id', (feature) => getID(countyObject, feature));
+
+    var enterSelection = countiesGroup.append('g').selectAll('path')
+      .data(topojson.feature(counties, counties.objects[countyObject]).features)
+      .enter()
+      .filter((feature) => cityIDs.includes(getID(countyObject, feature)))
+      .append('g')
+      .attr('id', (feature) => getID(countyObject, feature));
+
+    enterSelection
+      .append('circle')
+      .attr('cx', (feature) => geoGenerator.centroid(feature)[0])
+      .attr('cy', (feature) => geoGenerator.centroid(feature)[1])
+      .attr('r', 5);
+
+    enterSelection
+      .insert('circle')
+      .attr('cx', (feature) => geoGenerator.centroid(feature)[0])
+      .attr('cy', (feature) => geoGenerator.centroid(feature)[1])
+      .attr('r', 3)
+      .attr('fill-opacity', '0')
+      .attr('stroke', '#fff')
+      .attr('stroke-with', '1');
 })
 
 fs.writeFileSync(process.argv[3], d3n.svgString());
