@@ -4,7 +4,6 @@ all: build/counties.min.svg build/regions.min.svg build/cities.min.svg
 # TODO: Include mapshaper in project node_modules
 # TODO: Include SVGO in project node_moudles
 # TODO: requires node, jq, zip, unzip (versions)
-# TODO: Filter out london from cities
 
 build/gb_boundaries.shp.zip:
 	mkdir -p build

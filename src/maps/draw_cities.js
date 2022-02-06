@@ -16,6 +16,16 @@ let featureCollection = topojson.merge(topoj, [
     topoj.objects["ni_cities"],
 ])
 
+function getID(feature) {
+  if (feature.properties.hasOwnProperty('NAME')) {
+    return feature.properties.NAME;
+  }
+  if (feature.properties.NAME2_LANG != "eng") {
+    return feature.properties.NAME1;
+  }
+  return feature.properties.NAME2;
+}
+
 function drawCities (svg, geoGenerator) {
     var roi_feature = topojson.feature(topoj, topoj.objects["roi"])
 
@@ -32,8 +42,9 @@ function drawCities (svg, geoGenerator) {
         var enterSelection = citiesGroup.append('g').selectAll('g')
           .data(topojson.feature(topoj, topoj.objects[cityObject]).features)
           .enter()
+          .filter((feature) => getID(feature) != "London")
           .append('g')
-          .attr('id', (feature) => feature.properties.NAME);
+          .attr('id', getID);
 
         drawCircles(enterSelection, (feature) => geoGenerator.projection()(feature.geometry.coordinates))
     })
