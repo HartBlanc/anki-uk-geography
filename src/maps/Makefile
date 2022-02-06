@@ -1,7 +1,6 @@
 all: build/counties.min.svg build/regions.min.svg build/cities.min.svg
 
 # TODO: Body-of-Water maps
-# TODO: Commonise counties js
 # TODO: Include mapshaper in project node_modules
 # TODO: Include SVGO in project node_moudles
 # TODO: requires node, jq, zip, unzip (versions)
@@ -109,8 +108,8 @@ build/counties.topojson: build/roi/* build/england_wales_counties/* build/roi/* 
 		-simplify 0.3% \
 		-o build/counties.topojson format=topojson
 
-build/counties.svg: build/counties.topojson counties_svg_json.js
-	node counties_svg_json.js build/counties.topojson build/counties.svg
+build/counties.svg: build/counties.topojson draw_counties.js draw_topojson.js
+	node draw_counties.js build/counties.topojson build/counties.svg
 
 build/counties.min.svg: build/counties.svg svgo.config.js
 	svgo --config=svgo.config.js build/counties.svg -o build/counties.min.svg
@@ -123,8 +122,8 @@ build/regions.topojson: build/nuts_boundaries/*
 		-clean \
 		-o build/regions.topojson format=topojson
 
-build/regions.svg: build/regions.topojson regions_svg_json.js
-	node regions_svg_json.js build/regions.topojson build/regions.svg
+build/regions.svg: build/regions.topojson draw_regions.js draw_topojson.js
+	node draw_regions.js build/regions.topojson build/regions.svg
 
 build/regions.min.svg: build/regions.svg svgo.config.js
 	svgo --config=svgo.config.js build/regions.svg -o build/regions.min.svg
@@ -187,8 +186,8 @@ build/cities.topojson: build/gb_cities.csv build/ni_cities.csv build/counties.to
 
 	rm -r build/tmp
 
-build/cities.svg: build/cities.topojson cities_svg_json.js
-	node cities_svg_json.js build/cities.topojson build/cities.svg
+build/cities.svg: build/cities.topojson draw_cities.js draw_counties.js draw_topojson.js
+	node draw_cities.js build/cities.topojson build/cities.svg
 
 build/cities.min.svg: build/cities.svg svgo.config.js
 	svgo --config=svgo.config.js build/cities.svg -o build/cities.min.svg
