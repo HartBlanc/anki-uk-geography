@@ -1,15 +1,4 @@
 {{#City}}
-  <style>
-    [id='Bodies of Water'] {
-        visibility: hidden;
-    }
-    .cityCounty {
-      fill: #2ECC40;
-      transform-box: fill-box;
-      transform-origin: center;
-      transform: scale(2);
-    }
-  </style>
   <header>
     <div class="type">City</div>
     <div class="value value--top">{{City}}</div>
@@ -19,22 +8,15 @@
     <div class="type">Location on the map</div>
   </header>
   <div class="center">
-    @[img/uk_counties.svg] 
+    @[build/maps/cities.min.svg]
   </div>
 {{/City}}
 
 --
 
 <style>
-    [id='Bodies of Water'], [id='Cities'] > :not([id='{{City}}']) {
+    [id='Cities'] > :not([id='{{City}}']) {
         visibility: hidden;
-    }
-    [id='{{City}}'].cityCounty {
-      fill: #2ECC40;
-      transform-box: fill-box;
-      transform-origin: center;
-      animation: jump 0.75s;
-      animation-iteration-count: infinite;
     }
 </style>
 <header>
@@ -46,6 +28,6 @@
   <div class="type">Location on the map</div>
 </header>
 <div class="center">
-  @[img/uk_counties.svg]
+  @[build/maps/cities.min.svg]
 </div>
 @[utils/uk_geog/snippets/highlight_multiple_counties.html]

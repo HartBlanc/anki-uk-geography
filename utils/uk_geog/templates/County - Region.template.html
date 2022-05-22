@@ -9,16 +9,13 @@
 
   </header>
   <div class="center">
-    @[img/uk_regions.svg]
+    @[build/maps/regions.min.svg]
   </div>
 {{/County}}
 
 --
 
 <style>
-  [id='Cities'], [id='Bodies of Water'] {
-    visibility: hidden;
-  }
   [id='{{MacroLocation}}']{
     fill: #2ECC40;
   }
@@ -39,14 +36,14 @@
   <div class="value value--top">{{County}}</div>
 
   <hr>
-  
+
   <div class="type">Region?</div>
   <div class="center">{{type:MacroLocation}}</div>
 
 </header>
 <div class="center">
   <div id="fitcontent">
-    @[img/uk_counties.svg]
+    @[build/maps/counties.min.svg]
     @[utils/uk_geog/snippets/zoombox_optional.html]
   </div>
 </div>

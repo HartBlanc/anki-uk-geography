@@ -1,16 +1,7 @@
 {{#County}}
   <style>
-    [id="Bodies of Water"], [id='Cities']{
-      visibility: hidden;
-    }
     [id="{{County}}"]{
       fill: #2ECC40;
-    }
-    [id='{{County}}'].cityCounty {
-      transform-box: fill-box;
-      transform-origin: center;
-      animation: jump 0.75s;
-      animation-iteration-count: infinite;
     }
   </style>
 
@@ -26,7 +17,7 @@
   </header>
   <div class="center">
     <div id="fitcontent">
-      @[img/uk_counties.svg]
+      @[build/maps/counties.min.svg]
       @[utils/uk_geog/snippets/zoombox_optional.html]
     </div>
   </div>
@@ -35,24 +26,15 @@
 --
 
 <style>
-  [id="Bodies of Water"], [id='Cities']{
-    visibility: hidden;
-  }
   [id="{{County}}"]{
     fill: #2ECC40;
-  }
-  [id='{{County}}'].cityCounty {
-    transform-box: fill-box;
-    transform-origin: center;
-    animation: jump 0.75s;
-    animation-iteration-count: infinite;
   }
 </style>
 
 
 <header>
   <div class="type">County?</div>
-  <div class="center">{{type:City}}</div>
+  <div class="center">{{type:County}}</div>
 
   <hr>
 
@@ -61,7 +43,7 @@
 </header>
 <div class="center">
   <div id="fitcontent">
-    @[img/uk_counties.svg]
+    @[build/maps/counties.min.svg]
     @[utils/uk_geog/snippets/zoombox_optional.html]
   </div>
 </div>

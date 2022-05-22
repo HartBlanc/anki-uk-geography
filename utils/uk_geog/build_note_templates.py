@@ -1,7 +1,7 @@
 """
 A barebones CLI for substituting file contents into CrowdAnki Note Template.
 The external file reference syntax is @[path/to/file]. Where the path is
-relative to the path that the script is run from (advised to be project root.).
+relative to the path that the script is run from (advised to be project root).
 """
 
 import argparse
@@ -77,35 +77,29 @@ if __name__ == "__main__":
         description=(
             "A barebones CLI for substituting file contents into "
             "CrowdAnki Note Template. The external file reference syntax is "
-            "@[path/to/file]. Where the path is relative to current directory."
-            "(i.e. the directory that the python script is run from)"
+            "@[path/to/file]. Where the path is relative to current directory "
+            "(i.e. the directory that the python script is run from)."
         )
     )
     parser.add_argument(
-        "template_dir",
+        "templates",
         type=Path,
-        help=(
-            "The path to the directory where all of the templates with "
-            "external file references can be found. All templates must have a "
-            ".template.htm or template.html extension."
-        ),
+        nargs="+",
+        help="The paths to the template files which contain external file references.",
     )
     parser.add_argument(
-        "out_dir",
+        "-o",
+        "--out_directory",
         type=Path,
         help=(
-            "The path to the directory where the resolved templates will be "
+            "The path to the directory where the resolved templates should be "
             "written to. The filenames will be identical to the template used."
         ),
     )
 
     args = parser.parse_args()
 
-    templates = [
-        Template.from_path(t_path)
-        for t_path in args.template_dir.iterdir()
-        if t_path.suffixes in ([".template", ".htm"], [".template", ".html"])
-    ]
+    templates = [Template.from_path(t_path) for t_path in args.templates]
 
     file_references: set[str] = set()
     for template in templates:
@@ -116,6 +110,6 @@ if __name__ == "__main__":
     for template in templates:
         resolved_contents = template.replace_placeholders(file_ref_values)
         suffix = template.filepath.suffixes[-1]
-        out_path = args.out_dir / template.filepath.with_suffix("").with_suffix(suffix).name
+        out_path = args.out_directory / template.filepath.with_suffix("").with_suffix(suffix).name
         with out_path.open(mode="w") as out_file:
             out_file.write(resolved_contents)
